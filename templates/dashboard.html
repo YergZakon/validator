@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Дашборд • LegalGraph{% endblock %}
+{% block content %}
+<h1>Дашборд</h1>
+
+<div class="stats">
+    <div class="stat"><div class="num">{{ total_rel }}</div><div class="lbl">связей всего</div></div>
+    <div class="stat"><div class="num">{{ my_votes }}</div><div class="lbl">ваших голосов</div></div>
+    <div class="stat"><div class="num">{{ any_voted }}</div><div class="lbl">связей оценено (любым экспертом)</div></div>
+    <div class="stat"><div class="num">{{ '%.0f' % (100 * my_votes / total_rel if total_rel else 0) }}%</div><div class="lbl">ваш прогресс</div></div>
+</div>
+
+<h2>Статьи для разметки</h2>
+<table class="articles">
+    <thead>
+        <tr>
+            <th>Кодекс</th>
+            <th>Ст.</th>
+            <th>Название</th>
+            <th>Связей</th>
+            <th>Мой прогресс</th>
+            <th>Готово</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for a in articles %}
+        {% set pct = (100 * a.n_voted / a.n_rel) if a.n_rel else 0 %}
+        <tr>
+            <td>{{ a.code }}</td>
+            <td>{{ a.article_number }}</td>
+            <td>{{ a.title }}</td>
+            <td class="num-col">{{ a.n_rel }}</td>
+            <td class="progress-cell">
+                <div class="bar"><div class="fill" style="width:{{ pct }}%"></div></div>
+                <span class="pct">{{ a.n_voted }}/{{ a.n_rel }}</span>
+            </td>
+            <td>{% if a.completed %}<span class="done">✓</span>{% else %}—{% endif %}</td>
+            <td><a class="btn primary" href="/annotate/{{ a.id }}">открыть</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

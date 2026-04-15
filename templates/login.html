@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Вход • LegalGraph{% endblock %}
+{% block content %}
+<div class="login-box">
+    <h1>Экспертная валидация связей</h1>
+    <p class="muted">Вход в систему</p>
+    {% if error %}<div class="err">{{ error }}</div>{% endif %}
+    <form method="post" action="/login">
+        <label>Логин <input name="username" autofocus required></label>
+        <label>Пароль <input type="password" name="password" required></label>
+        <button type="submit">Войти</button>
+    </form>
+    <p class="muted tiny">По умолчанию: <code>admin</code> / <code>admin</code> — смените после входа.</p>
+</div>
+{% endblock %}

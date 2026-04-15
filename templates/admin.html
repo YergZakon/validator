@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block title %}Админка • LegalGraph{% endblock %}
+{% block content %}
+<h1>Админ-панель</h1>
+
+<section class="cards">
+    <div class="card"><h3>Статей</h3><div class="big">{{ n_articles }}</div></div>
+    <div class="card"><h3>Связей</h3><div class="big">{{ n_relations }}</div></div>
+    <div class="card"><h3>Голосов</h3><div class="big">{{ n_votes }}</div></div>
+    <div class="card"><h3>Связей оценено</h3><div class="big">{{ n_rel_voted }} / {{ n_relations }}</div></div>
+</section>
+
+<section>
+    <h2>Межэкспертное согласие (IAA)</h2>
+    {% if iaa.total_voted == 0 %}
+        <p class="muted">Ещё нет голосов.</p>
+    {% else %}
+        <p>Общее κ (Fleiss): <b>{{ iaa.global_kappa }}</b> — {{ iaa.global_interpretation }}
+            <span class="muted">({{ iaa.total_voted }} связей с голосами)</span></p>
+
+        {% if iaa.pairwise %}
+        <h3>Попарное κ (Cohen)</h3>
+        <table class="metrics">
+            <thead><tr><th>Пара</th><th>κ</th><th>интерпретация</th><th>общих связей</th></tr></thead>
+            <tbody>
+            {% for pair, m in iaa.pairwise.items() %}
+            <tr>
+                <td>{{ pair }}</td>
+                <td><b>{{ m.kappa }}</b></td>
+                <td>{{ m.interpretation }}</td>
+                <td>{{ m.n_overlapping_items }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% if iaa.per_relation_type %}
+        <h3>κ по типам связей</h3>
+        <table class="metrics">
+            <thead><tr><th>Связь</th><th>κ</th><th>интерпретация</th><th>элементов</th></tr></thead>
+            <tbody>
+            {% for rt, m in iaa.per_relation_type.items() %}
+            <tr>
+                <td><code>{{ rt }}</code></td>
+                <td><b>{{ m.kappa }}</b></td>
+                <td>{{ m.interpretation }}</td>
+                <td>{{ m.n_relations }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    {% endif %}
+</section>
+
+<section>
+    <h2>Статистика по типам связей</h2>
+    <table class="metrics">
+        <thead>
+            <tr><th>Связь</th><th>всего</th><th>оценено</th><th>✓ approve</th><th>✗ reject</th><th>✎ modify</th><th>Precision*</th></tr>
+        </thead>
+        <tbody>
+        {% for r in by_rel %}
+            {% set all_votes = (r.n_approve or 0) + (r.n_reject or 0) + (r.n_modify or 0) %}
+            <tr>
+                <td><code>{{ r.relation_type }}</code></td>
+                <td>{{ r.total }}</td>
+                <td>{{ r.n_voted or 0 }}</td>
+                <td>{{ r.n_approve or 0 }}</td>
+                <td>{{ r.n_reject or 0 }}</td>
+                <td>{{ r.n_modify or 0 }}</td>
+                <td>
+                    {% if all_votes > 0 %}
+                        {{ '%.1f%%' % (100 * (r.n_approve or 0) / all_votes) }}
+                    {% else %}—{% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <p class="muted tiny">* Precision = approve / (approve + reject + modify) — доля подтверждённых автоизвлечённых связей.</p>
+</section>
+
+<section>
+    <h2>Эксперты</h2>
+    <table class="experts">
+        <thead><tr><th>ID</th><th>Логин</th><th>ФИО</th><th>Email</th><th>Admin</th><th>Голосов</th><th>Доп.</th><th>Ст. готово</th><th>Создан</th><th></th></tr></thead>
+        <tbody>
+        {% for e in experts %}
+            <tr>
+                <td>{{ e.id }}</td>
+                <td><b>{{ e.username }}</b></td>
+                <td>{{ e.full_name or '' }}</td>
+                <td>{{ e.email or '' }}</td>
+                <td>{% if e.is_admin %}✓{% endif %}</td>
+                <td>{{ e.n_votes }}</td>
+                <td>{{ e.n_add }}</td>
+                <td>{{ e.n_done }}</td>
+                <td class="tiny">{{ e.created_at }}</td>
+                <td class="actions">
+                    <form method="post" action="/admin/experts/{{ e.id }}/reset-password" style="display:inline-flex;gap:4px"
+                          onsubmit="return confirm('Сменить пароль для {{ e.username }}?')">
+                        <input name="new_password" placeholder="новый пароль" size="12" required>
+                        <button type="submit" class="btn small">сброс</button>
+                    </form>
+                    {% if e.id != expert.id %}
+                    <form method="post" action="/admin/experts/{{ e.id }}/delete" style="display:inline"
+                          onsubmit="return confirm('Удалить {{ e.username }} и все его голоса?')">
+                        <button type="submit" class="btn small danger">×</button>
+                    </form>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>Добавить эксперта</h3>
+    <form method="post" action="/admin/experts/add" class="add-expert-form">
+        <input name="username" placeholder="логин" required>
+        <input name="full_name" placeholder="ФИО">
+        <input name="email" type="email" placeholder="email">
+        <input name="password" placeholder="пароль" required>
+        <label><input type="checkbox" name="is_admin"> admin</label>
+        <button type="submit" class="btn primary">Добавить</button>
+    </form>
+</section>
+
+<section>
+    <h2>Экспорт для ML</h2>
+    <form method="post" action="/admin/export" style="display:inline">
+        <button type="submit" class="btn primary">Сгенерировать экспорт</button>
+    </form>
+    <p class="muted tiny">Создаёт файлы в <code>data/exports/</code>. Скачать:</p>
+    <ul class="downloads">
+        <li><a href="/admin/download/ml_dataset.jsonl">ml_dataset.jsonl</a> — все связи с распределением голосов и gold-меткой</li>
+        <li><a href="/admin/download/ml_dataset.csv">ml_dataset.csv</a> — то же в CSV</li>
+        <li><a href="/admin/download/gold_relations.jsonl">gold_relations.jsonl</a> — только подтверждённые (для обучения)</li>
+        <li><a href="/admin/download/disputed.jsonl">disputed.jsonl</a> — спорные (для active learning)</li>
+        <li><a href="/admin/download/expert_additions.jsonl">expert_additions.jsonl</a> — экспертные добавления</li>
+        <li><a href="/admin/download/per_expert_stats.csv">per_expert_stats.csv</a> — статистика по экспертам</li>
+    </ul>
+</section>
+{% endblock %}

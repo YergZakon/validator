@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% block title %}{{ article.code }} ст.{{ article.article_number }} • LegalGraph{% endblock %}
+{% block content %}
+<div class="annotate-header">
+    <div>
+        <h1>{{ article.code }} — ст. {{ article.article_number }}</h1>
+        <h2 class="muted">{{ article.title }}</h2>
+    </div>
+    <div class="nav-arrows">
+        {% if prev_id %}<a class="btn" href="/annotate/{{ prev_id }}">← предыдущая</a>{% endif %}
+        <a class="btn" href="/">К списку</a>
+        {% if next_id %}<a class="btn primary" href="/annotate/{{ next_id }}">следующая →</a>{% endif %}
+    </div>
+</div>
+
+<div class="split">
+    <!-- Левая колонка: текст статьи -->
+    <aside class="article-text">
+        <div class="progress-line">
+            <div class="bar"><div class="fill" style="width:{{ (100 * progress.voted / progress.total) if progress.total else 0 }}%"></div></div>
+            <span>{{ progress.voted }}/{{ progress.total }} связей оценено</span>
+        </div>
+        <div class="filter-bar">
+            <a href="?filter=all" class="filter-btn {% if filter == 'all' %}active{% endif %}">Все</a>
+            <a href="?filter=unrated" class="filter-btn {% if filter == 'unrated' %}active{% endif %}">Неоцен.</a>
+            <a href="?filter=approve" class="filter-btn {% if filter == 'approve' %}active{% endif %}">✓</a>
+            <a href="?filter=reject" class="filter-btn {% if filter == 'reject' %}active{% endif %}">✗</a>
+            <a href="?filter=modify" class="filter-btn {% if filter == 'modify' %}active{% endif %}">✎</a>
+        </div>
+        <h3>Текст статьи</h3>
+        <pre class="art-text">{{ article.text }}</pre>
+
+        <h3>Сущности ({{ entities|length }})</h3>
+        <details class="entities-section">
+            <summary>Показать список сущностей</summary>
+            <table class="entities">
+                <thead><tr><th>span</th><th>текст</th><th>метка</th></tr></thead>
+                <tbody>
+                {% for e in entities %}
+                    <tr>
+                        <td class="tiny">[{{ e.start }}–{{ e.end }}]</td>
+                        <td class="ent-text">«{{ e.text[:40] }}{% if e.text|length > 40 %}…{% endif %}»</td>
+                        <td><span class="tag tag-{{ e.group_name }}">{{ e.label }}</span></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </details>
+    </aside>
+
+    <!-- Правая колонка: связи для валидации -->
+    <section class="relations-pane">
+        <h3>Связи для валидации ({{ relations|length }})</h3>
+
+        {% for r in relations %}
+        <article class="rel-card" id="rel-{{ r.id }}" data-my="{{ r.my_verdict or '' }}">
+            <div class="rel-header">
+                <div class="rel-entities">
+                    <span class="ent-box">
+                        <span class="ent-text">«{{ r.from_text[:50] }}{% if r.from_text|length > 50 %}…{% endif %}»</span>
+                        <span class="tag">{{ r.from_label }}</span>
+                    </span>
+                    <span class="rel-arrow">→ <b>{{ r.relation_type }}</b> →</span>
+                    <span class="ent-box">
+                        <span class="ent-text">«{{ r.to_text[:50] }}{% if r.to_text|length > 50 %}…{% endif %}»</span>
+                        <span class="tag">{{ r.to_label }}</span>
+                    </span>
+                </div>
+                <div class="rel-meta">
+                    <span class="conf">conf={{ '%.2f' % r.confidence }}</span>
+                    {% if r.trigger_phrase %}<span class="trig">trig: {{ r.trigger_phrase[:30] }}</span>{% endif %}
+                    <span class="votes-badge">
+                        👥 {{ r.n_all_votes }} | ✓{{ r.n_approve_all }} ✗{{ r.n_reject_all }} ✎{{ r.n_modify_all }}
+                    </span>
+                </div>
+            </div>
+
+            <form class="vote-form" onsubmit="return submitVote(event, {{ r.id }})">
+                <input type="hidden" name="relation_id" value="{{ r.id }}">
+                <div class="verdict-buttons">
+                    <button type="button" class="btn v-approve {% if r.my_verdict=='approve' %}selected{% endif %}"
+                            onclick="setVerdict({{ r.id }}, 'approve')">✓ Подтверждаю</button>
+                    <button type="button" class="btn v-reject {% if r.my_verdict=='reject' %}selected{% endif %}"
+                            onclick="setVerdict({{ r.id }}, 'reject')">✗ Отклоняю</button>
+                    <button type="button" class="btn v-modify {% if r.my_verdict=='modify' %}selected{% endif %}"
+                            onclick="setVerdict({{ r.id }}, 'modify')">✎ Модифицировать</button>
+                </div>
+                <div class="modify-block" id="mod-{{ r.id }}" style="display:{% if r.my_verdict=='modify' %}block{% else %}none{% endif %}">
+                    <label>Правильный тип связи:
+                        <select name="correction_relation_type">
+                            <option value="">— выбрать —</option>
+                            {% for rt in relation_types %}
+                            <option value="{{ rt }}" {% if r.my_correction == rt %}selected{% endif %}>{{ rt }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                </div>
+                <textarea name="comment" placeholder="Комментарий (опционально)…" rows="2">{{ r.my_comment or '' }}</textarea>
+                <div class="status" id="status-{{ r.id }}">
+                    {% if r.my_verdict %}<span class="saved">✓ сохранено: {{ r.my_verdict }}</span>{% endif %}
+                </div>
+            </form>
+        </article>
+        {% else %}
+        <p class="muted">Связей по фильтру нет.</p>
+        {% endfor %}
+
+        <div class="bottom-bar">
+            <button class="btn big primary" onclick="completeArticle({{ article.id }})">
+                Завершить эту статью ({{ progress.voted }}/{{ progress.total }})
+            </button>
+        </div>
+    </section>
+</div>
+
+<script>
+let selectedVerdict = {};
+
+function setVerdict(relId, verdict) {
+    selectedVerdict[relId] = verdict;
+    const card = document.getElementById('rel-' + relId);
+    card.querySelectorAll('.verdict-buttons .btn').forEach(b => b.classList.remove('selected'));
+    card.querySelector('.v-' + verdict).classList.add('selected');
+    document.getElementById('mod-' + relId).style.display =
+        verdict === 'modify' ? 'block' : 'none';
+    submitVote(null, relId);
+}
+
+async function submitVote(ev, relId) {
+    if (ev) ev.preventDefault();
+    const verdict = selectedVerdict[relId] ||
+        document.querySelector('#rel-' + relId + ' .verdict-buttons .selected')?.classList.contains('v-approve') && 'approve' ||
+        document.querySelector('#rel-' + relId + ' .verdict-buttons .selected')?.classList.contains('v-reject') && 'reject' ||
+        document.querySelector('#rel-' + relId + ' .verdict-buttons .selected')?.classList.contains('v-modify') && 'modify';
+    if (!verdict) return false;
+    const card = document.getElementById('rel-' + relId);
+    const form = card.querySelector('form.vote-form');
+    const fd = new FormData(form);
+    fd.set('verdict', verdict);
+    const resp = await fetch('/api/vote', {method:'POST', body: fd});
+    const data = await resp.json();
+    if (data.ok) {
+        const st = document.getElementById('status-' + relId);
+        st.innerHTML = '<span class="saved">✓ сохранено: ' + verdict + '</span>';
+        const badge = card.querySelector('.votes-badge');
+        if (badge && data.counts) {
+            badge.innerHTML = '👥 ' + data.counts.n_all +
+                ' | ✓' + (data.counts.n_approve||0) +
+                ' ✗' + (data.counts.n_reject||0) +
+                ' ✎' + (data.counts.n_modify||0);
+        }
+        card.dataset.my = verdict;
+    } else {
+        alert('Ошибка: ' + JSON.stringify(data));
+    }
+    return false;
+}
+
+async function completeArticle(aid) {
+    const fd = new FormData();
+    fd.set('article_db_id', aid);
+    const r = await fetch('/api/complete-article', {method:'POST', body: fd});
+    const d = await r.json();
+    if (d.ok) {
+        alert('Статья отмечена как завершённая. Переход к списку.');
+        window.location.href = '/';
+    }
+}
+</script>
+{% endblock %}
