@@ -21,6 +21,8 @@ def hash_pwd(pwd: str) -> str:
 
 
 def seed_articles():
+    """Идемпотентный seed: UPSERT по (article_db_id, rel_id) — голоса экспертов
+    сохраняются между перезаливками, потому что rel_id стабильны (sha1-based)."""
     conn = get_conn()
     cur = conn.cursor()
     files = sorted(MVP_DIR.glob("*.json"))
@@ -29,7 +31,7 @@ def seed_articles():
               f"Сначала запустите extract_relations_v2.py")
         sys.exit(1)
 
-    n_art = n_ent = n_rel = 0
+    n_art = n_ent = n_rel = n_rel_kept = n_rel_dropped = n_votes_dropped = 0
     for fp in files:
         data = json.loads(fp.read_text(encoding="utf-8"))
         cur.execute("""
@@ -45,10 +47,9 @@ def seed_articles():
                     (data["article_id"],))
         adb = cur.fetchone()[0]
 
-        # Очистка существующих и вставка
+        # --- Сущности: пересеиваются полностью ---
+        # entities не имеют FK от других таблиц, безопасно пересоздать
         cur.execute("DELETE FROM entities WHERE article_db_id = ?", (adb,))
-        cur.execute("DELETE FROM relations WHERE article_db_id = ?", (adb,))
-
         for e in data.get("entities", []):
             cur.execute("""
                 INSERT INTO entities
@@ -58,6 +59,28 @@ def seed_articles():
                   e["group"], e["label"]))
             n_ent += 1
 
+        # --- Связи: UPSERT, удаляем только устаревшие ---
+        cur.execute(
+            "SELECT id, rel_id FROM relations WHERE article_db_id = ?", (adb,)
+        )
+        existing = {row[1]: row[0] for row in cur.fetchall()}
+        new_rel_ids = {r["id"] for r in data.get("relations", [])}
+
+        # 1. Удаляем relations, которых больше нет в новом наборе.
+        #    Голоса этих relations теряются (никуда не привязать).
+        for old_rel_id, db_id in existing.items():
+            if old_rel_id not in new_rel_ids:
+                cur.execute(
+                    "SELECT COUNT(*) FROM votes WHERE relation_id = ?", (db_id,)
+                )
+                lost_votes = cur.fetchone()[0]
+                if lost_votes:
+                    n_votes_dropped += lost_votes
+                cur.execute("DELETE FROM votes WHERE relation_id = ?", (db_id,))
+                cur.execute("DELETE FROM relations WHERE id = ?", (db_id,))
+                n_rel_dropped += 1
+
+        # 2. UPSERT для каждой связи в новом наборе.
         for r in data.get("relations", []):
             cur.execute("""
                 INSERT INTO relations
@@ -65,6 +88,18 @@ def seed_articles():
                      from_text, to_text, from_label, to_label,
                      relation_type, confidence, trigger_phrase, algorithm, source)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(article_db_id, rel_id) DO UPDATE SET
+                    from_entity_id = excluded.from_entity_id,
+                    to_entity_id   = excluded.to_entity_id,
+                    from_text      = excluded.from_text,
+                    to_text        = excluded.to_text,
+                    from_label     = excluded.from_label,
+                    to_label       = excluded.to_label,
+                    relation_type  = excluded.relation_type,
+                    confidence     = excluded.confidence,
+                    trigger_phrase = excluded.trigger_phrase,
+                    algorithm      = excluded.algorithm,
+                    source         = excluded.source
             """, (adb, r["id"], r["from_id"], r["to_id"],
                   r.get("from_text"), r.get("to_text"),
                   r.get("from_label"), r.get("to_label"),
@@ -72,11 +107,17 @@ def seed_articles():
                   r.get("trigger_phrase"), r.get("algorithm"),
                   r.get("source", "auto")))
             n_rel += 1
+            if r["id"] in existing:
+                n_rel_kept += 1
         n_art += 1
 
     conn.commit()
     conn.close()
-    print(f"✓ Загружено: {n_art} статей, {n_ent} сущностей, {n_rel} связей")
+    msg = (f"✓ Загружено: {n_art} статей, {n_ent} сущностей, {n_rel} связей "
+           f"(сохранено существующих: {n_rel_kept}; удалено устаревших: {n_rel_dropped})")
+    if n_votes_dropped:
+        msg += f"\n⚠ Потеряно голосов на удалённых связях: {n_votes_dropped}"
+    print(msg)
 
 
 def seed_admin():

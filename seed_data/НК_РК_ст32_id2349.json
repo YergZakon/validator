@@ -1321,7 +1321,7 @@
   ],
   "relations": [
     {
-      "id": "REL_0001",
+      "id": "REL_ebeb15aceb",
       "from_id": "zKUNpOw_IW",
       "to_id": "7zPpFgchY_",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -1338,7 +1338,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0002",
+      "id": "REL_333cbdf355",
       "from_id": "tSx2piycwu",
       "to_id": "dLQUVYeFPL",
       "from_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
@@ -1355,7 +1355,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0003",
+      "id": "REL_1375b68e34",
       "from_id": "AEx3UE8RXj",
       "to_id": "BK18jSWeWO",
       "from_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
@@ -1372,7 +1372,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0004",
+      "id": "REL_f05a68821f",
       "from_id": "PYoSlItTbY",
       "to_id": "OEV20U4Xeg",
       "from_text": "При этом уплаченные суммы пеней, начисленные в соответствии с пунктом 3 настоящей статьи, возврату не подлежат.",
@@ -1389,7 +1389,109 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0005",
+      "id": "REL_90f7b7b59d",
+      "from_id": "gVRTTDgSWR",
+      "to_id": "gVRTTDgSWR",
+      "from_text": "В случае получения от налоговых органов государств – членов ЕАЭС, налогоплательщиками которых импортированы товары, заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
+      "to_text": "В случае получения от налоговых органов государств – членов ЕАЭС, налогоплательщиками которых импортированы товары, заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_ae6d033c70",
+      "from_id": "wcl5XgD4Ay",
+      "to_id": "wcl5XgD4Ay",
+      "from_text": "Уведомление, указанное в настоящем пункте, направляется в течение десяти рабочих дней со дня поступления такого заявления.",
+      "to_text": "Уведомление, указанное в настоящем пункте, направляется в течение десяти рабочих дней со дня поступления такого заявления.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_ad773b7155",
+      "from_id": "zKUNpOw_IW",
+      "to_id": "zKUNpOw_IW",
+      "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
+      "to_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_129165e2e9",
+      "from_id": "tSx2piycwu",
+      "to_id": "tSx2piycwu",
+      "from_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
+      "to_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_6ff5506d48",
+      "from_id": "AEx3UE8RXj",
+      "to_id": "AEx3UE8RXj",
+      "from_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
+      "to_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_e4216f3377",
+      "from_id": "PYoSlItTbY",
+      "to_id": "PYoSlItTbY",
+      "from_text": "При этом уплаченные суммы пеней, начисленные в соответствии с пунктом 3 настоящей статьи, возврату не подлежат.",
+      "to_text": "При этом уплаченные суммы пеней, начисленные в соответствии с пунктом 3 настоящей статьи, возврату не подлежат.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ЗАПРЕЩАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_f6c5a8dca9",
       "from_id": "pMLzWfI25w",
       "to_id": "gHXCPTgo8I",
       "from_text": "направляется",
@@ -1406,7 +1508,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0006",
+      "id": "REL_e576a3b811",
       "from_id": "pi7FTd1npa",
       "to_id": "r6oEewW2V8",
       "from_text": "уплате",
@@ -1423,7 +1525,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0007",
+      "id": "REL_284df57d43",
       "from_id": "q25slHNBmP",
       "to_id": "Iuoahj2YcF",
       "from_text": "установленной",
@@ -1440,7 +1542,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0008",
+      "id": "REL_efeb302998",
       "from_id": "VdMaL6DdFS",
       "to_id": "SV-3hGlP8C",
       "from_text": "уплате",
@@ -1457,7 +1559,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0009",
+      "id": "REL_55edd83cbc",
       "from_id": "gVRTTDgSWR",
       "to_id": "fqkoJYuVWh",
       "from_text": "В случае получения от налоговых органов государств – членов ЕАЭС, налогоплательщиками которых импортированы товары, заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
@@ -1474,7 +1576,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0010",
+      "id": "REL_b6e417708d",
       "from_id": "gVRTTDgSWR",
       "to_id": "ZPgKWOvWEL",
       "from_text": "В случае получения от налоговых органов государств – членов ЕАЭС, налогоплательщиками которых импортированы товары, заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
@@ -1491,7 +1593,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0011",
+      "id": "REL_a306979a58",
       "from_id": "zKUNpOw_IW",
       "to_id": "rUj12IIIeA",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -1508,7 +1610,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0012",
+      "id": "REL_8290f49b0d",
       "from_id": "zKUNpOw_IW",
       "to_id": "Z-yiGcy9FE",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -1525,7 +1627,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0013",
+      "id": "REL_ccc472c4a5",
       "from_id": "zKUNpOw_IW",
       "to_id": "FjgW9UPEk3",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -1542,7 +1644,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0014",
+      "id": "REL_5d196f7ee1",
       "from_id": "tSx2piycwu",
       "to_id": "rPhwxAyCG2",
       "from_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
@@ -1559,7 +1661,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0015",
+      "id": "REL_5648177662",
       "from_id": "AEx3UE8RXj",
       "to_id": "Va-jt3T-oC",
       "from_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
@@ -1576,7 +1678,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0016",
+      "id": "REL_c229eb6ce0",
       "from_id": "tSx2piycwu",
       "to_id": "BEptAdC_Tk",
       "from_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
@@ -1593,7 +1695,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0017",
+      "id": "REL_9aa6643c98",
       "from_id": "AEx3UE8RXj",
       "to_id": "9V7dWbE2TF",
       "from_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
@@ -1610,7 +1712,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0018",
+      "id": "REL_dd2371fcdc",
       "from_id": "PYoSlItTbY",
       "to_id": "9V7dWbE2TF",
       "from_text": "При этом уплаченные суммы пеней, начисленные в соответствии с пунктом 3 настоящей статьи, возврату не подлежат.",
@@ -1627,7 +1729,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0019",
+      "id": "REL_976d6f6a0f",
       "from_id": "xTw8dftSnt",
       "to_id": "9V7dWbE2TF",
       "from_text": "уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
@@ -1644,7 +1746,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0020",
+      "id": "REL_237a97efe4",
       "from_id": "wsT_WnOUfh",
       "to_id": "9V7dWbE2TF",
       "from_text": "При этом уплаченные суммы пеней, начисленные в соответствии с пунктом 3 настоящей статьи, возврату не подлежат.",
@@ -1661,7 +1763,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0021",
+      "id": "REL_6a03e9d6ba",
       "from_id": "zKUNpOw_IW",
       "to_id": "3qrB3_CTRO",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -1678,7 +1780,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0022",
+      "id": "REL_a33d65d0b2",
       "from_id": "FFbD_kFyid",
       "to_id": "9dIV-8tDI-",
       "from_text": "заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
@@ -1695,7 +1797,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0023",
+      "id": "REL_e77cc79c12",
       "from_id": "vhO_c1HfBa",
       "to_id": "vTdaPWxaHy",
       "from_text": "направляется в течение десяти рабочих дней со дня поступления такого заявления.",
@@ -1712,7 +1814,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0024",
+      "id": "REL_1e7a2db0e0",
       "from_id": "3P9-l9Du-y",
       "to_id": "VbXGLC-IBx",
       "from_text": "плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -1729,7 +1831,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0025",
+      "id": "REL_8e891f9744",
       "from_id": "6xaAtsHBgX",
       "to_id": "dkg0aKir7f",
       "from_text": "налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
@@ -1746,7 +1848,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0026",
+      "id": "REL_b0e3e449cd",
       "from_id": "xTw8dftSnt",
       "to_id": "RZA1SjOnDh",
       "from_text": "уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
@@ -1763,7 +1865,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0027",
+      "id": "REL_d29bc38195",
       "from_id": "dwn2jclCeu",
       "to_id": "QlMaMgGXRI",
       "from_text": "от налоговых органов",
@@ -1780,7 +1882,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0028",
+      "id": "REL_a36e189d7f",
       "from_id": "-3vxf6Hy3I",
       "to_id": "QlMaMgGXRI",
       "from_text": "государств",
@@ -1797,7 +1899,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0029",
+      "id": "REL_6de6af9b4d",
       "from_id": "Wl04h1UQCE",
       "to_id": "QlMaMgGXRI",
       "from_text": "членов ЕАЭС",
@@ -1814,7 +1916,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0030",
+      "id": "REL_1655aeea5a",
       "from_id": "vAoW1FshmU",
       "to_id": "QlMaMgGXRI",
       "from_text": "налогоплательщиками",
@@ -1831,7 +1933,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0031",
+      "id": "REL_14200a12fc",
       "from_id": "JpMU-i5x2H",
       "to_id": "QlMaMgGXRI",
       "from_text": "налогоплательщиками",
@@ -1848,7 +1950,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0032",
+      "id": "REL_ee44df81fe",
       "from_id": "TnrLTRtJfq",
       "to_id": "poM3KqTNM6",
       "from_text": "налогоплательщику",
@@ -1865,7 +1967,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0033",
+      "id": "REL_f74d44acf7",
       "from_id": "0e468WBntm",
       "to_id": "poM3KqTNM6",
       "from_text": "налогоплательщику",
@@ -1882,7 +1984,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0034",
+      "id": "REL_562e7f65cb",
       "from_id": "FspFaEt7k8",
       "to_id": "poM3KqTNM6",
       "from_text": "Республики Казахстан,",
@@ -1899,7 +2001,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0035",
+      "id": "REL_d3ad22576f",
       "from_id": "81anF7l8ZX",
       "to_id": "lekYzL83Ab",
       "from_text": "налоговым органом Республики Казахстан",
@@ -1916,7 +2018,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0036",
+      "id": "REL_b39f556baa",
       "from_id": "2ngfkTqjpg",
       "to_id": "lekYzL83Ab",
       "from_text": "Республики Казахстан",
@@ -1933,7 +2035,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0037",
+      "id": "REL_ee1aa76906",
       "from_id": "6Iz78jb9LP",
       "to_id": "rvyhewvK80",
       "from_text": "Республики Казахстан",
@@ -1950,7 +2052,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0038",
+      "id": "REL_480d0508be",
       "from_id": "pQli2UzTE1",
       "to_id": "rvyhewvK80",
       "from_text": "налоговый орган",
@@ -1967,7 +2069,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0039",
+      "id": "REL_d642b67bb4",
       "from_id": "iuXcNEgJQW",
       "to_id": "zhJLJ_3h9s",
       "from_text": "плательщик",
@@ -1984,7 +2086,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0040",
+      "id": "REL_4a16612c18",
       "from_id": "w7MM2_P9LP",
       "to_id": "zhJLJ_3h9s",
       "from_text": "плательщик",
@@ -2001,7 +2103,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0041",
+      "id": "REL_59500403cf",
       "from_id": "c0UQFQg5Ei",
       "to_id": "MZscTkhBvy",
       "from_text": "налоговым органом",
@@ -2018,7 +2120,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0042",
+      "id": "REL_40a3577cc4",
       "from_id": "O86HSOXMzY",
       "to_id": "jSLhoeL3s7",
       "from_text": "Республики Казахстан",
@@ -2035,7 +2137,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0043",
+      "id": "REL_2c228c8101",
       "from_id": "5iB8dKdWBi",
       "to_id": "18vs4tbP5H",
       "from_text": "налоговый орган",
@@ -2052,7 +2154,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0044",
+      "id": "REL_0ef4a5c333",
       "from_id": "yovQ1H_4Cn",
       "to_id": "jSLhoeL3s7",
       "from_text": "налоговый орган Республики Казахстан",
@@ -2069,7 +2171,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0045",
+      "id": "REL_99cacf5eb5",
       "from_id": "QlMaMgGXRI",
       "to_id": "yxwLCBhXdJ",
       "from_text": "импортированы",
@@ -2086,7 +2188,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0046",
+      "id": "REL_00c8d3778b",
       "from_id": "QlMaMgGXRI",
       "to_id": "zs2RFxESWk",
       "from_text": "импортированы",
@@ -2103,7 +2205,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0047",
+      "id": "REL_570d8adfbc",
       "from_id": "QlMaMgGXRI",
       "to_id": "OrT2sJIhC-",
       "from_text": "импортированы",
@@ -2120,7 +2222,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0048",
+      "id": "REL_8453af9e28",
       "from_id": "QlMaMgGXRI",
       "to_id": "TzFvQbXoQA",
       "from_text": "импортированы",
@@ -2137,7 +2239,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0049",
+      "id": "REL_bcdcc2474f",
       "from_id": "QlMaMgGXRI",
       "to_id": "ZVnfP-kThn",
       "from_text": "импортированы",
@@ -2154,7 +2256,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0050",
+      "id": "REL_cbbdd6b321",
       "from_id": "aZmeBXrGrE",
       "to_id": "OrT2sJIhC-",
       "from_text": "ввозе",
@@ -2171,7 +2273,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0051",
+      "id": "REL_d140de9598",
       "from_id": "aZmeBXrGrE",
       "to_id": "TzFvQbXoQA",
       "from_text": "ввозе",
@@ -2188,7 +2290,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0052",
+      "id": "REL_48094614c0",
       "from_id": "aZmeBXrGrE",
       "to_id": "ZVnfP-kThn",
       "from_text": "ввозе",
@@ -2205,7 +2307,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0053",
+      "id": "REL_abd5076da8",
       "from_id": "nXh19p6dFY",
       "to_id": "TzFvQbXoQA",
       "from_text": "уплате",
@@ -2222,7 +2324,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0054",
+      "id": "REL_01fc93574f",
       "from_id": "nXh19p6dFY",
       "to_id": "ZVnfP-kThn",
       "from_text": "уплате",
@@ -2239,7 +2341,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0055",
+      "id": "REL_9f2178de97",
       "from_id": "poM3KqTNM6",
       "to_id": "BpdbHUfcOp",
       "from_text": "экспорт",
@@ -2256,7 +2358,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0056",
+      "id": "REL_8c5c70c280",
       "from_id": "lekYzL83Ab",
       "to_id": "3dF-6pN6Qu",
       "from_text": "направляется",
@@ -2273,7 +2375,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0057",
+      "id": "REL_26952f4ae6",
       "from_id": "lekYzL83Ab",
       "to_id": "ohvxSC--BH",
       "from_text": "направляется",
@@ -2290,7 +2392,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0058",
+      "id": "REL_7738bd0717",
       "from_id": "pMLzWfI25w",
       "to_id": "qkIeaMu9fC",
       "from_text": "направляется",
@@ -2307,7 +2409,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0059",
+      "id": "REL_856b333195",
       "from_id": "rvyhewvK80",
       "to_id": "D5_IObMisZ",
       "from_text": "ввозе",
@@ -2324,7 +2426,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0060",
+      "id": "REL_623cf91d3a",
       "from_id": "rvyhewvK80",
       "to_id": "1S0THt0EOb",
       "from_text": "ввозе",
@@ -2341,7 +2443,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0061",
+      "id": "REL_a44e5fecf8",
       "from_id": "rvyhewvK80",
       "to_id": "Rc6KI0aZ-R",
       "from_text": "ввозе",
@@ -2358,7 +2460,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0062",
+      "id": "REL_4a5f22633c",
       "from_id": "pi7FTd1npa",
       "to_id": "1S0THt0EOb",
       "from_text": "уплате",
@@ -2375,7 +2477,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0063",
+      "id": "REL_d831d03063",
       "from_id": "pi7FTd1npa",
       "to_id": "Rc6KI0aZ-R",
       "from_text": "уплате",
@@ -2392,7 +2494,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0064",
+      "id": "REL_09a83ab21a",
       "from_id": "pi7FTd1npa",
       "to_id": "Han7f21z2N",
       "from_text": "уплате",
@@ -2409,7 +2511,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0065",
+      "id": "REL_488e42836e",
       "from_id": "aqnjPChUm-",
       "to_id": "WjMeSon1Oc",
       "from_text": "реализации",
@@ -2426,7 +2528,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0066",
+      "id": "REL_67d5f019db",
       "from_id": "aqnjPChUm-",
       "to_id": "_0e7M60wvW",
       "from_text": "реализации",
@@ -2443,7 +2545,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0067",
+      "id": "REL_5b8aea2f79",
       "from_id": "aqnjPChUm-",
       "to_id": "obA-NuQr7G",
       "from_text": "реализации",
@@ -2460,7 +2562,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0068",
+      "id": "REL_f18c47a064",
       "from_id": "aqnjPChUm-",
       "to_id": "ZPAWX6tOpb",
       "from_text": "реализации",
@@ -2477,7 +2579,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0069",
+      "id": "REL_98e1371b09",
       "from_id": "aqnjPChUm-",
       "to_id": "GfQ-W6lKQP",
       "from_text": "реализации",
@@ -2494,7 +2596,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0070",
+      "id": "REL_0b2964a533",
       "from_id": "WC6ZFBjgwF",
       "to_id": "obA-NuQr7G",
       "from_text": "по реализации",
@@ -2511,7 +2613,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0071",
+      "id": "REL_9d682d7278",
       "from_id": "WC6ZFBjgwF",
       "to_id": "ZPAWX6tOpb",
       "from_text": "по реализации",
@@ -2528,7 +2630,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0072",
+      "id": "REL_7cf554f5f0",
       "from_id": "WC6ZFBjgwF",
       "to_id": "GfQ-W6lKQP",
       "from_text": "по реализации",
@@ -2545,7 +2647,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0073",
+      "id": "REL_8101abbfdf",
       "from_id": "WC6ZFBjgwF",
       "to_id": "Q3eErBKRza",
       "from_text": "по реализации",
@@ -2562,7 +2664,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0074",
+      "id": "REL_7dbb4453a7",
       "from_id": "YXlNS0folI",
       "to_id": "obA-NuQr7G",
       "from_text": "экспорте",
@@ -2579,7 +2681,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0075",
+      "id": "REL_11312048cd",
       "from_id": "YXlNS0folI",
       "to_id": "ZPAWX6tOpb",
       "from_text": "экспорте",
@@ -2596,7 +2698,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0076",
+      "id": "REL_27f377987d",
       "from_id": "YXlNS0folI",
       "to_id": "GfQ-W6lKQP",
       "from_text": "экспорте",
@@ -2613,7 +2715,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0077",
+      "id": "REL_de02a5f12b",
       "from_id": "YXlNS0folI",
       "to_id": "Q3eErBKRza",
       "from_text": "экспорте",
@@ -2630,7 +2732,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0078",
+      "id": "REL_1c9f1d53c5",
       "from_id": "b-6F9M2lbE",
       "to_id": "Q3eErBKRza",
       "from_text": "переработке",
@@ -2647,7 +2749,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0079",
+      "id": "REL_fa5df0357d",
       "from_id": "7zPpFgchY_",
       "to_id": "anP_3wEt7M",
       "from_text": "обязан уплатить",
@@ -2664,7 +2766,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0080",
+      "id": "REL_5d62ab000e",
       "from_id": "7zPpFgchY_",
       "to_id": "yKxYG_HpdP",
       "from_text": "обязан уплатить",
@@ -2681,7 +2783,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0081",
+      "id": "REL_9141e0a661",
       "from_id": "7zPpFgchY_",
       "to_id": "4OL11pcJur",
       "from_text": "обязан уплатить",
@@ -2698,7 +2800,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0082",
+      "id": "REL_2f21b7ef5b",
       "from_id": "qKgG-TFor8",
       "to_id": "1tsbOdL7zo",
       "from_text": "устанавливается",
@@ -2715,7 +2817,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0083",
+      "id": "REL_f2a4040b8b",
       "from_id": "qKgG-TFor8",
       "to_id": "kfm2nGKQfQ",
       "from_text": "устанавливается",
@@ -2732,7 +2834,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0084",
+      "id": "REL_90ae17d5f0",
       "from_id": "RULWOA3hO_",
       "to_id": "kfm2nGKQfQ",
       "from_text": "ведения",
@@ -2749,7 +2851,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0085",
+      "id": "REL_282ad5a010",
       "from_id": "rBKudYPl79",
       "to_id": "hPa9cWIKE1",
       "from_text": "несвоевременной и неполной уплаты",
@@ -2766,7 +2868,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0086",
+      "id": "REL_517c647da2",
       "from_id": "rBKudYPl79",
       "to_id": "Bjt4WE0CdX",
       "from_text": "несвоевременной и неполной уплаты",
@@ -2783,7 +2885,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0087",
+      "id": "REL_c909f47883",
       "from_id": "rBKudYPl79",
       "to_id": "8NhGIK4xfC",
       "from_text": "несвоевременной и неполной уплаты",
@@ -2800,7 +2902,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0088",
+      "id": "REL_3f279a3324",
       "from_id": "UL47C-focp",
       "to_id": "8NhGIK4xfC",
       "from_text": "исчисленной",
@@ -2817,7 +2919,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0089",
+      "id": "REL_bf155d41d7",
       "from_id": "18vs4tbP5H",
       "to_id": "A_PHhny11c",
       "from_text": "применяет",
@@ -2834,7 +2936,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0090",
+      "id": "REL_5aad90a241",
       "from_id": "18vs4tbP5H",
       "to_id": "bXaabuRBGR",
       "from_text": "применяет",
@@ -2851,7 +2953,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0091",
+      "id": "REL_0f82de8b25",
       "from_id": "dLQUVYeFPL",
       "to_id": "bXaabuRBGR",
       "from_text": "налогового обязательства",
@@ -2868,7 +2970,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0092",
+      "id": "REL_131fa874c5",
       "from_id": "dLQUVYeFPL",
       "to_id": "dCSqIPHdfU",
       "from_text": "налогового обязательства",
@@ -2885,7 +2987,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0093",
+      "id": "REL_e0c86e343a",
       "from_id": "dLQUVYeFPL",
       "to_id": "bR8DCQL7ZL",
       "from_text": "налогового обязательства",
@@ -2902,7 +3004,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0094",
+      "id": "REL_3c21c6a0d1",
       "from_id": "g5vZtgg0Pm",
       "to_id": "8vrcWUyTzP",
       "from_text": "поступления",
@@ -2919,7 +3021,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0095",
+      "id": "REL_ca7bda4c8d",
       "from_id": "g5vZtgg0Pm",
       "to_id": "gMklrL5XJu",
       "from_text": "поступления",
@@ -2936,7 +3038,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0096",
+      "id": "REL_54960be4eb",
       "from_id": "g5vZtgg0Pm",
       "to_id": "0GeHIdN-a-",
       "from_text": "поступления",
@@ -2953,7 +3055,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0097",
+      "id": "REL_39bd366d2b",
       "from_id": "g5vZtgg0Pm",
       "to_id": "lvsO6hOD5M",
       "from_text": "поступления",
@@ -2970,7 +3072,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0098",
+      "id": "REL_4928e817b6",
       "from_id": "3tqHGfRVYe",
       "to_id": "gMklrL5XJu",
       "from_text": "ввозе",
@@ -2987,7 +3089,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0099",
+      "id": "REL_9de9c9a4b9",
       "from_id": "3tqHGfRVYe",
       "to_id": "0GeHIdN-a-",
       "from_text": "ввозе",
@@ -3004,7 +3106,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0100",
+      "id": "REL_9de89bcb49",
       "from_id": "3tqHGfRVYe",
       "to_id": "lvsO6hOD5M",
       "from_text": "ввозе",
@@ -3021,7 +3123,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0101",
+      "id": "REL_b5d0179cd7",
       "from_id": "VdMaL6DdFS",
       "to_id": "0GeHIdN-a-",
       "from_text": "уплате",
@@ -3038,7 +3140,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0102",
+      "id": "REL_4478970bb5",
       "from_id": "VdMaL6DdFS",
       "to_id": "lvsO6hOD5M",
       "from_text": "уплате",
@@ -3055,7 +3157,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0103",
+      "id": "REL_1faf6422f7",
       "from_id": "lWlYGAUpX2",
       "to_id": "4oEIDkCz0l",
       "from_text": "уплаченные",
@@ -3072,7 +3174,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0104",
+      "id": "REL_5ddd290668",
       "from_id": "lWlYGAUpX2",
       "to_id": "E34MfLFozQ",
       "from_text": "уплаченные",
@@ -3089,7 +3191,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0105",
+      "id": "REL_f225597b82",
       "from_id": "BK18jSWeWO",
       "to_id": "tWejOT-Mm7",
       "from_text": "подлежат зачету и возврату",
@@ -3106,7 +3208,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0106",
+      "id": "REL_1b2e1bfdb0",
       "from_id": "OF71CwBNRP",
       "to_id": "_0ySEeVaJw",
       "from_text": "уплаченные",
@@ -3123,7 +3225,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0107",
+      "id": "REL_6110f4644a",
       "from_id": "OF71CwBNRP",
       "to_id": "EJk2w3fHCs",
       "from_text": "уплаченные",
@@ -3140,7 +3242,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0108",
+      "id": "REL_ecd3d5d4d2",
       "from_id": "OF71CwBNRP",
       "to_id": "2YntF1mtT6",
       "from_text": "уплаченные",
@@ -3157,7 +3259,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0109",
+      "id": "REL_752203b7ab",
       "from_id": "2EgaWEg3bF",
       "to_id": "2YntF1mtT6",
       "from_text": "начисленные",
@@ -3174,7 +3276,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0110",
+      "id": "REL_716714e528",
       "from_id": "hY1rAcAKNX",
       "to_id": "k8tdaqnbkC",
       "from_text": "указанное в",
@@ -3191,7 +3293,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0111",
+      "id": "REL_19be45bff7",
       "from_id": "hY1rAcAKNX",
       "to_id": "qkIeaMu9fC",
       "from_text": "указанное в",
@@ -3208,7 +3310,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0112",
+      "id": "REL_037adc44e8",
       "from_id": "zhJLJ_3h9s",
       "to_id": "ANKfSH_qYL",
       "from_text": "указанный в",
@@ -3225,7 +3327,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0113",
+      "id": "REL_627ec6bacc",
       "from_id": "zhJLJ_3h9s",
       "to_id": "anP_3wEt7M",
       "from_text": "указанный в",
@@ -3242,7 +3344,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0114",
+      "id": "REL_c3e873ea45",
       "from_id": "zhJLJ_3h9s",
       "to_id": "yKxYG_HpdP",
       "from_text": "указанный в",
@@ -3259,7 +3361,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0115",
+      "id": "REL_9c20669dd1",
       "from_id": "q25slHNBmP",
       "to_id": "4OL11pcJur",
       "from_text": "установленной",
@@ -3276,7 +3378,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0116",
+      "id": "REL_17470aedb6",
       "from_id": "q25slHNBmP",
       "to_id": "rB8IBC385E",
       "from_text": "установленной",
@@ -3293,7 +3395,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0117",
+      "id": "REL_b096a0a812",
       "from_id": "D3ACwqREiM",
       "to_id": "rB8IBC385E",
       "from_text": "предусмотренный",
@@ -3310,7 +3412,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0118",
+      "id": "REL_0ee0e43cc9",
       "from_id": "MZscTkhBvy",
       "to_id": "n7HDwLWveK",
       "from_text": "указанных в",
@@ -3327,7 +3429,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0119",
+      "id": "REL_c37975707d",
       "from_id": "MZscTkhBvy",
       "to_id": "i4Q-f73uJw",
       "from_text": "указанных в",
@@ -3344,7 +3446,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0120",
+      "id": "REL_f36f98da03",
       "from_id": "MZscTkhBvy",
       "to_id": "72Wh17BPq-",
       "from_text": "указанных в",
@@ -3361,7 +3463,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0121",
+      "id": "REL_57542daed6",
       "from_id": "C-7wPGAM11",
       "to_id": "bR8DCQL7ZL",
       "from_text": "определенном",
@@ -3378,7 +3480,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0122",
+      "id": "REL_febb21f370",
       "from_id": "jSLhoeL3s7",
       "to_id": "c3YqX3yi7y",
       "from_text": "предусмотренного",
@@ -3395,7 +3497,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0123",
+      "id": "REL_03d76ea4bc",
       "from_id": "jSLhoeL3s7",
       "to_id": "4oEIDkCz0l",
       "from_text": "предусмотренного",
@@ -3412,7 +3514,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0124",
+      "id": "REL_fc83c7af8f",
       "from_id": "jSLhoeL3s7",
       "to_id": "E34MfLFozQ",
       "from_text": "предусмотренного",
@@ -3429,7 +3531,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0125",
+      "id": "REL_43ae51a57e",
       "from_id": "gVRTTDgSWR",
       "to_id": "9dIV-8tDI-",
       "from_text": "В случае получения от налоговых органов государств – членов ЕАЭС, налогоплательщиками которых импортированы товары, заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
@@ -3446,7 +3548,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0126",
+      "id": "REL_d498f5cd86",
       "from_id": "gVRTTDgSWR",
       "to_id": "FFbD_kFyid",
       "from_text": "В случае получения от налоговых органов государств – членов ЕАЭС, налогоплательщиками которых импортированы товары, заявления о ввозе товаров и уплате косвенных налогов в электронной форме налогоплательщику Республики Казахстан, осуществившему экспорт товаров, налоговым органом Республики Казахстан направляется уведомление о получении такого заявления.",
@@ -3463,7 +3565,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0127",
+      "id": "REL_2bc9037bbb",
       "from_id": "wcl5XgD4Ay",
       "to_id": "vhO_c1HfBa",
       "from_text": "Уведомление, указанное в настоящем пункте, направляется в течение десяти рабочих дней со дня поступления такого заявления.",
@@ -3480,7 +3582,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0128",
+      "id": "REL_9a7177a12b",
       "from_id": "wcl5XgD4Ay",
       "to_id": "vTdaPWxaHy",
       "from_text": "Уведомление, указанное в настоящем пункте, направляется в течение десяти рабочих дней со дня поступления такого заявления.",
@@ -3497,7 +3599,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0129",
+      "id": "REL_3dfbb836ec",
       "from_id": "zKUNpOw_IW",
       "to_id": "VbXGLC-IBx",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -3514,7 +3616,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0130",
+      "id": "REL_74360714ba",
       "from_id": "zKUNpOw_IW",
       "to_id": "3P9-l9Du-y",
       "from_text": "При непоступлении в электронной форме в налоговый орган Республики Казахстан заявления о ввозе товаров и уплате косвенных налогов в течение ста восьмидесяти календарных дней с даты совершения оборота по реализации товаров при их экспорте, по реализации работ, услуг в случае выполнения работ по переработке давальческого сырья плательщик налога на добавленную стоимость, указанный в подпункте 1) пункта 1 статьи 521 настоящего Кодекса, обязан уплатить налог по ставке, установленной пунктом 1 статьи 503 настоящего Кодекса, в срок, предусмотренный статьей 506 настоящего Кодекса.",
@@ -3531,7 +3633,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0131",
+      "id": "REL_5e1125f632",
       "from_id": "tSx2piycwu",
       "to_id": "dkg0aKir7f",
       "from_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
@@ -3548,7 +3650,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0132",
+      "id": "REL_c1d559466b",
       "from_id": "tSx2piycwu",
       "to_id": "6xaAtsHBgX",
       "from_text": "В случае несвоевременной и неполной уплаты суммы налога на добавленную стоимость, исчисленной в соответствии с пунктом 2 настоящей статьи, налоговый орган применяет способы обеспечения исполнения не выполненного в срок налогового обязательства и меры принудительного взыскания в порядке, определенном настоящим Кодексом.",
@@ -3565,7 +3667,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0133",
+      "id": "REL_07cc7db6d9",
       "from_id": "AEx3UE8RXj",
       "to_id": "RZA1SjOnDh",
       "from_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",
@@ -3582,7 +3684,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0134",
+      "id": "REL_0225ef464d",
       "from_id": "AEx3UE8RXj",
       "to_id": "xTw8dftSnt",
       "from_text": "В случае поступления заявления о ввозе товаров и уплате косвенных налогов в электронной форме в налоговый орган Республики Казахстан по истечении срока, предусмотренного пунктом 2 настоящей статьи, уплаченные суммы налога на добавленную стоимость подлежат зачету и возврату в соответствии со статьями 120, 121 и 122 настоящего Кодекса.",

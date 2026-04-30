@@ -1113,7 +1113,7 @@
   ],
   "relations": [
     {
-      "id": "REL_0001",
+      "id": "REL_c20e8ae687",
       "from_id": "rbjkA5NP0j",
       "to_id": "nCHn1JlB91",
       "from_text": "может быть освобождено судом от наказания с установлением поручительства.",
@@ -1130,7 +1130,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0002",
+      "id": "REL_f2b06a0db9",
       "from_id": "DKOOpXAJZ-",
       "to_id": "nCHn1JlB91",
       "from_text": "может быть освобождено судом от наказания с установлением поручительства.",
@@ -1147,7 +1147,24 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0003",
+      "id": "REL_e80bce6c69",
+      "from_id": "DKOOpXAJZ-",
+      "to_id": "rbjkA5NP0j",
+      "from_text": "может быть освобождено судом от наказания с установлением поручительства.",
+      "to_text": "может быть освобождено судом от наказания с установлением поручительства.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ДИСПОЗИТИВНАЯ",
+      "to_label": "norm_types:НОРМА_УПРАВОМОЧИВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_91dd3d1daa",
       "from_id": "vJ-eayeXWN",
       "to_id": "TDI9Dg1sIj",
       "from_text": "Положения настоящей статьи не распространяются на лиц, совершивших коррупционные преступления, террористические преступления, экстремистские преступления, преступления, совершенные в составе преступной группы, преступления против половой неприкосновенности несовершеннолетних",
@@ -1164,7 +1181,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0004",
+      "id": "REL_2280817dcd",
       "from_id": "WKj0gOmoVD",
       "to_id": "sMqPo9mrZk",
       "from_text": ".",
@@ -1181,7 +1198,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0005",
+      "id": "REL_5a1033eb1c",
       "from_id": "D_rChhWIc6",
       "to_id": "WOKmkVmAxS",
       "from_text": "Установление поручительства",
@@ -1198,7 +1215,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0006",
+      "id": "REL_d835fc9109",
       "from_id": "N8Ce21ZrWd",
       "to_id": "OwKmT5wCYj",
       "from_text": "уголовное правонарушение",
@@ -1215,7 +1232,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0007",
+      "id": "REL_44137401bd",
       "from_id": "N8Ce21ZrWd",
       "to_id": "_o7X_7gTgl",
       "from_text": "уголовное правонарушение",
@@ -1232,7 +1249,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0008",
+      "id": "REL_3ea4fbb178",
       "from_id": "20U9E5q2gQ",
       "to_id": "6gAqDRmhQV",
       "from_text": "при совершении уголовного проступка",
@@ -1249,7 +1266,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0009",
+      "id": "REL_d3d8302a6e",
       "from_id": "r7-ICedYx9",
       "to_id": "90qkbQK6TO",
       "from_text": "при совершении преступления небольшой тяжести",
@@ -1266,7 +1283,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0010",
+      "id": "REL_7dfb153678",
       "from_id": "bZdi-84yqW",
       "to_id": "guluj9rJ62",
       "from_text": "при совершении преступления средней тяжести",
@@ -1283,7 +1300,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0011",
+      "id": "REL_fd6f47e165",
       "from_id": "DYsE7MdUpE",
       "to_id": "ThyTtJJF-i",
       "from_text": "наказания",
@@ -1300,7 +1317,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0012",
+      "id": "REL_70880cbf0d",
       "from_id": "7Z77oR5whU",
       "to_id": "uJ1qaQFQ9-",
       "from_text": "не совершило в период поручительства нового уголовного правонарушения",
@@ -1317,7 +1334,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0013",
+      "id": "REL_be5850fa99",
       "from_id": "TDI9Dg1sIj",
       "to_id": "Ew3O058Htl",
       "from_text": "по истечении срока поручительства залог возвращается поручителю.",
@@ -1334,7 +1351,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0014",
+      "id": "REL_87b8b23c25",
       "from_id": "7Z77oR5whU",
       "to_id": "qSFTKzKtsq",
       "from_text": "не совершило в период поручительства нового уголовного правонарушения",
@@ -1351,7 +1368,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0015",
+      "id": "REL_eaf539ca27",
       "from_id": "rbjkA5NP0j",
       "to_id": "u1xCSWIwbk",
       "from_text": "может быть освобождено судом от наказания с установлением поручительства.",
@@ -1368,7 +1385,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0016",
+      "id": "REL_a9fca48993",
       "from_id": "nCHn1JlB91",
       "to_id": "u1xCSWIwbk",
       "from_text": "может быть освобождено судом",
@@ -1385,7 +1402,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0017",
+      "id": "REL_f48003945f",
       "from_id": "4olP1FYtLE",
       "to_id": "B-uyzJOG09",
       "from_text": "Срок поручительства устанавливается:\\n1) при совершении уголовного проступка – от шести месяцев до одного года;\\n2) при совершении преступления небольшой тяжести – от одного года до двух лет;\\n3) при совершении преступления средней тяжести – от двух до пяти лет.",
@@ -1402,7 +1419,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0018",
+      "id": "REL_ffd928db34",
       "from_id": "4olP1FYtLE",
       "to_id": "ZotImr7Fbw",
       "from_text": "Срок поручительства устанавливается:\\n1) при совершении уголовного проступка – от шести месяцев до одного года;\\n2) при совершении преступления небольшой тяжести – от одного года до двух лет;\\n3) при совершении преступления средней тяжести – от двух до пяти лет.",
@@ -1419,7 +1436,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0019",
+      "id": "REL_ef3f086762",
       "from_id": "4olP1FYtLE",
       "to_id": "_pAjPkhWBY",
       "from_text": "Срок поручительства устанавливается:\\n1) при совершении уголовного проступка – от шести месяцев до одного года;\\n2) при совершении преступления небольшой тяжести – от одного года до двух лет;\\n3) при совершении преступления средней тяжести – от двух до пяти лет.",
@@ -1436,7 +1453,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0020",
+      "id": "REL_068c65f048",
       "from_id": "TDI9Dg1sIj",
       "to_id": "wlOJZLEfLf",
       "from_text": "по истечении срока поручительства залог возвращается поручителю.",
@@ -1453,7 +1470,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0021",
+      "id": "REL_2d0ac9c45e",
       "from_id": "n2fdNf3H37",
       "to_id": "UbJ_WJhiM8",
       "from_text": "Лицо",
@@ -1470,7 +1487,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0022",
+      "id": "REL_d9316f88c2",
       "from_id": "q1lm6icW6C",
       "to_id": "pnmetXGOWG",
       "from_text": "человека",
@@ -1487,7 +1504,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0023",
+      "id": "REL_e3494688a1",
       "from_id": "1GhziLQ8xf",
       "to_id": "8Lvv_s1pi9",
       "from_text": "судом",
@@ -1504,7 +1521,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0024",
+      "id": "REL_ba132e30a3",
       "from_id": "--mVXbWLzU",
       "to_id": "7Z77oR5whU",
       "from_text": "лицо",
@@ -1521,7 +1538,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0025",
+      "id": "REL_1bdf171590",
       "from_id": "JJEmyF7410",
       "to_id": "h5VKWa-ySb",
       "from_text": "лицо",
@@ -1538,7 +1555,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0026",
+      "id": "REL_75b4f20306",
       "from_id": "3xVNAsn-sb",
       "to_id": "bfmhVnZmaX",
       "from_text": "суд",
@@ -1555,7 +1572,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0027",
+      "id": "REL_fa9ec929ba",
       "from_id": "ORO1SBLpYJ",
       "to_id": "uvfvpU6L_4",
       "from_text": "преступной группы",
@@ -1572,7 +1589,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0028",
+      "id": "REL_0bdb30685d",
       "from_id": "_zejYnzp3C",
       "to_id": "98HyEtFcbs",
       "from_text": "лиц",
@@ -1589,7 +1606,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0029",
+      "id": "REL_91cefae058",
       "from_id": "D_rChhWIc6",
       "to_id": "v-Q6-WNaVX",
       "from_text": "Установление поручительства",
@@ -1606,7 +1623,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0030",
+      "id": "REL_0d0096de08",
       "from_id": "7Z77oR5whU",
       "to_id": "_PtAvQR5o5",
       "from_text": "не совершило в период поручительства нового уголовного правонарушения",
@@ -1623,7 +1640,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0031",
+      "id": "REL_4aaa21d1a3",
       "from_id": "bfmhVnZmaX",
       "to_id": "ZJSMGnhEcT",
       "from_text": "отменяет решение об освобождении от наказания",
@@ -1640,7 +1657,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0032",
+      "id": "REL_5d6875b2f3",
       "from_id": "bfmhVnZmaX",
       "to_id": "6L-vxgCL2w",
       "from_text": "отменяет решение об освобождении от наказания",

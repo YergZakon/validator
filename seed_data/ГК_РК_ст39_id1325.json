@@ -849,7 +849,7 @@
   ],
   "relations": [
     {
-      "id": "REL_0001",
+      "id": "REL_4a4b27b289",
       "from_id": "O_oK0UFFxn",
       "to_id": "NKLmnop2yd",
       "from_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
@@ -866,7 +866,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0002",
+      "id": "REL_9184425ebc",
       "from_id": "O_oK0UFFxn",
       "to_id": "nwUucBCWP3",
       "from_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
@@ -883,7 +883,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0003",
+      "id": "REL_eb4f4ac360",
       "from_id": "O_oK0UFFxn",
       "to_id": "0cHF5Sw38i",
       "from_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
@@ -900,7 +900,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0004",
+      "id": "REL_0bf954b204",
       "from_id": "oeWI2aqzJ3",
       "to_id": "mhktR7fJoe",
       "from_text": "Должник, не исполнивший обязательство вследствие действий третьего лица, имеет право требовать возмещения убытков с данного лица",
@@ -917,7 +917,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0005",
+      "id": "REL_1d32c422a5",
       "from_id": "oeWI2aqzJ3",
       "to_id": "gEeiv95kRY",
       "from_text": "Должник, не исполнивший обязательство вследствие действий третьего лица, имеет право требовать возмещения убытков с данного лица",
@@ -934,7 +934,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0006",
+      "id": "REL_8c75c39f49",
       "from_id": "pasVtOpsb4",
       "to_id": "GAhx3B-SL_",
       "from_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
@@ -951,7 +951,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0007",
+      "id": "REL_dfc1202445",
       "from_id": "pasVtOpsb4",
       "to_id": "2pVJxikdyp",
       "from_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
@@ -968,7 +968,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0008",
+      "id": "REL_2d8f9b11f9",
       "from_id": "pasVtOpsb4",
       "to_id": "I_TtHCdrUV",
       "from_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
@@ -985,7 +985,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0009",
+      "id": "REL_8242c8eff1",
       "from_id": "qajkXiwbEP",
       "to_id": "BETMpU4EdN",
       "from_text": "Неуплаченное одним из содолжников должнику, исполнившему солидарную обязанность, падает в равной доле на этого должника и на остальных содолжников",
@@ -1002,7 +1002,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0010",
+      "id": "REL_13ead02ad8",
       "from_id": "w9mMYorrwc",
       "to_id": "XAL2QW9Pu0",
       "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
@@ -1019,7 +1019,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0011",
+      "id": "REL_98b8965c61",
       "from_id": "41trEZ6pAB",
       "to_id": "tMbazcTE77",
       "from_text": "Солидарный кредитор, получивший исполнение от должника, обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
@@ -1036,7 +1036,109 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0012",
+      "id": "REL_7b98b88c71",
+      "from_id": "O_oK0UFFxn",
+      "to_id": "O_oK0UFFxn",
+      "from_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
+      "to_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ДИСПОЗИТИВНАЯ",
+      "to_label": "norm_types:НОРМА_УПРАВОМОЧИВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_a7b5fb7fdb",
+      "from_id": "oeWI2aqzJ3",
+      "to_id": "oeWI2aqzJ3",
+      "from_text": "Должник, не исполнивший обязательство вследствие действий третьего лица, имеет право требовать возмещения убытков с данного лица",
+      "to_text": "Должник, не исполнивший обязательство вследствие действий третьего лица, имеет право требовать возмещения убытков с данного лица",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ДИСПОЗИТИВНАЯ",
+      "to_label": "norm_types:НОРМА_УПРАВОМОЧИВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_d212b28bfb",
+      "from_id": "pasVtOpsb4",
+      "to_id": "pasVtOpsb4",
+      "from_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
+      "to_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ДИСПОЗИТИВНАЯ",
+      "to_label": "norm_types:НОРМА_УПРАВОМОЧИВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_18665a15ce",
+      "from_id": "qajkXiwbEP",
+      "to_id": "qajkXiwbEP",
+      "from_text": "Неуплаченное одним из содолжников должнику, исполнившему солидарную обязанность, падает в равной доле на этого должника и на остальных содолжников",
+      "to_text": "Неуплаченное одним из содолжников должнику, исполнившему солидарную обязанность, падает в равной доле на этого должника и на остальных содолжников",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_309f47b7d3",
+      "from_id": "w9mMYorrwc",
+      "to_id": "w9mMYorrwc",
+      "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
+      "to_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_3e026c108d",
+      "from_id": "41trEZ6pAB",
+      "to_id": "41trEZ6pAB",
+      "from_text": "Солидарный кредитор, получивший исполнение от должника, обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
+      "to_text": "Солидарный кредитор, получивший исполнение от должника, обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_f5f39dc032",
       "from_id": "nwUucBCWP3",
       "to_id": "MeeqNFrJmT",
       "from_text": "имеет право обратного требования",
@@ -1053,7 +1155,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0013",
+      "id": "REL_5d52dd8db3",
       "from_id": "2pVJxikdyp",
       "to_id": "gIfLFFebTy",
       "from_text": "имеет право обратного требования",
@@ -1070,7 +1172,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0014",
+      "id": "REL_a4501198ca",
       "from_id": "BETMpU4EdN",
       "to_id": "jVRJz4yLyx",
       "from_text": "солидарную обязанность",
@@ -1087,7 +1189,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0015",
+      "id": "REL_aec512c6bb",
       "from_id": "2pVJxikdyp",
       "to_id": "nYzL9fHgdA",
       "from_text": "имеет право обратного требования",
@@ -1104,7 +1206,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0016",
+      "id": "REL_f0f718824b",
       "from_id": "B0YuRqwnLC",
       "to_id": "yxQRel99a3",
       "from_text": "возместить",
@@ -1121,7 +1223,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0017",
+      "id": "REL_c7bedd19ff",
       "from_id": "B0YuRqwnLC",
       "to_id": "4c_DAYB1-6",
       "from_text": "возместить",
@@ -1138,7 +1240,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0018",
+      "id": "REL_049413b055",
       "from_id": "XAL2QW9Pu0",
       "to_id": "ZF3sPIamYQ",
       "from_text": "солидарного обязательства",
@@ -1155,7 +1257,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0019",
+      "id": "REL_0ed64bc387",
       "from_id": "w9mMYorrwc",
       "to_id": "ZF3sPIamYQ",
       "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
@@ -1172,7 +1274,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0020",
+      "id": "REL_7c7e01ebfc",
       "from_id": "zGzrX9iC0o",
       "to_id": "ZF3sPIamYQ",
       "from_text": "Правила настоящего пункта применяются соответственно при",
@@ -1189,7 +1291,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0021",
+      "id": "REL_d68ad1ef2e",
       "from_id": "w9mMYorrwc",
       "to_id": "XAL2QW9Pu0",
       "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
@@ -1206,7 +1308,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0022",
+      "id": "REL_496528a84c",
       "from_id": "zGzrX9iC0o",
       "to_id": "XAL2QW9Pu0",
       "from_text": "Правила настоящего пункта применяются соответственно при",
@@ -1223,7 +1325,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0023",
+      "id": "REL_9c71a4ac9b",
       "from_id": "41trEZ6pAB",
       "to_id": "2pAVuvN7OP",
       "from_text": "Солидарный кредитор, получивший исполнение от должника, обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
@@ -1240,7 +1342,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0024",
+      "id": "REL_33be5ec6a8",
       "from_id": "4HflRtysc8",
       "to_id": "2pAVuvN7OP",
       "from_text": "обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
@@ -1257,7 +1359,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0025",
+      "id": "REL_d5deefee0b",
       "from_id": "XAL2QW9Pu0",
       "to_id": "JGXhdfyB9H",
       "from_text": "солидарного обязательства",
@@ -1274,7 +1376,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0026",
+      "id": "REL_5db415518b",
       "from_id": "qajkXiwbEP",
       "to_id": "JGXhdfyB9H",
       "from_text": "Неуплаченное одним из содолжников должнику, исполнившему солидарную обязанность, падает в равной доле на этого должника и на остальных содолжников",
@@ -1291,7 +1393,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0027",
+      "id": "REL_aefedaa345",
       "from_id": "w9mMYorrwc",
       "to_id": "JGXhdfyB9H",
       "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
@@ -1308,7 +1410,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0028",
+      "id": "REL_5a03902623",
       "from_id": "NVEJExTzr9",
       "to_id": "JGXhdfyB9H",
       "from_text": "падает в равной доле на этого должника и на остальных содолжников",
@@ -1325,7 +1427,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0029",
+      "id": "REL_ef667d3de7",
       "from_id": "zGzrX9iC0o",
       "to_id": "JGXhdfyB9H",
       "from_text": "Правила настоящего пункта применяются соответственно при",
@@ -1342,7 +1444,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0030",
+      "id": "REL_e626d034e0",
       "from_id": "_HoHO3JLUT",
       "to_id": "5i3zuYrLRB",
       "from_text": "имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
@@ -1359,7 +1461,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0031",
+      "id": "REL_65daca8991",
       "from_id": "tdI4y-DwVF",
       "to_id": "G05gd4ogLz",
       "from_text": "имеет право требовать возмещения убытков с данного лица",
@@ -1376,7 +1478,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0032",
+      "id": "REL_b85dcd54cf",
       "from_id": "jnvEze_NKy",
       "to_id": "xQgaZcK06x",
       "from_text": "имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
@@ -1393,7 +1495,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0033",
+      "id": "REL_59318a0951",
       "from_id": "NVEJExTzr9",
       "to_id": "deGYViqnhZ",
       "from_text": "падает в равной доле на этого должника и на остальных содолжников",
@@ -1410,7 +1512,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0034",
+      "id": "REL_d9dfc0ceb2",
       "from_id": "zGzrX9iC0o",
       "to_id": "PQyH7y1l01",
       "from_text": "Правила настоящего пункта применяются соответственно при",
@@ -1427,7 +1529,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0035",
+      "id": "REL_962ecf5e24",
       "from_id": "4HflRtysc8",
       "to_id": "RaunIz2zHq",
       "from_text": "обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
@@ -1444,7 +1546,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0036",
+      "id": "REL_7d1aa6f194",
       "from_id": "XPg28G00x8",
       "to_id": "AyzC8iiOUk",
       "from_text": "Должник",
@@ -1461,7 +1563,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0037",
+      "id": "REL_e19fd5a611",
       "from_id": "3TrcWdk9no",
       "to_id": "nwUucBCWP3",
       "from_text": "другого лица",
@@ -1478,7 +1580,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0038",
+      "id": "REL_20190bb1ce",
       "from_id": "bzDeqImXoh",
       "to_id": "gAipdktIgp",
       "from_text": "к этому лицу",
@@ -1495,7 +1597,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0039",
+      "id": "REL_0a81f8a116",
       "from_id": "y0DPiLnD-_",
       "to_id": "mhktR7fJoe",
       "from_text": "Должник",
@@ -1512,7 +1614,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0040",
+      "id": "REL_71203ca9c6",
       "from_id": "74Ai3St5rp",
       "to_id": "gEeiv95kRY",
       "from_text": "третьего лица",
@@ -1529,7 +1631,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0041",
+      "id": "REL_6a338469d4",
       "from_id": "9Wtt8WEDhI",
       "to_id": "ETBrmj-6fx",
       "from_text": "Должник",
@@ -1546,7 +1648,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0042",
+      "id": "REL_8b1e92890b",
       "from_id": "KFkOrx4B6n",
       "to_id": "I_TtHCdrUV",
       "from_text": "каждому из остальных должников",
@@ -1563,7 +1665,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0043",
+      "id": "REL_5fc7f9dec9",
       "from_id": "6MQcDclHHk",
       "to_id": "qZLwFYplR6",
       "from_text": "одним из содолжников должнику",
@@ -1580,7 +1682,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0044",
+      "id": "REL_a33eb792c2",
       "from_id": "80DBIhekXA",
       "to_id": "c4ElNlk6et",
       "from_text": "Солидарный кредитор",
@@ -1597,7 +1699,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0045",
+      "id": "REL_588e5ea070",
       "from_id": "v9REl8-JGP",
       "to_id": "dPzj8L3M29",
       "from_text": "другим кредиторам",
@@ -1614,7 +1716,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0046",
+      "id": "REL_75055b8667",
       "from_id": "WBmBn9DSoB",
       "to_id": "dPzj8L3M29",
       "from_text": "им",
@@ -1631,7 +1733,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0047",
+      "id": "REL_d3c357a2c3",
       "from_id": "GRJkrp6PM0",
       "to_id": "tMbazcTE77",
       "from_text": "от должника",
@@ -1648,7 +1750,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0048",
+      "id": "REL_fdf199d2dd",
       "from_id": "mhktR7fJoe",
       "to_id": "XJL8CA6Ax_",
       "from_text": "обязательство",
@@ -1665,7 +1767,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0049",
+      "id": "REL_54bd381ad6",
       "from_id": "O_oK0UFFxn",
       "to_id": "5i3zuYrLRB",
       "from_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
@@ -1682,7 +1784,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0050",
+      "id": "REL_930661bf4b",
       "from_id": "O_oK0UFFxn",
       "to_id": "_HoHO3JLUT",
       "from_text": "Должник, исполнивший обязательство другого лица, имеет право обратного требования (регресса) к этому лицу в размере исполненного обязательства",
@@ -1699,7 +1801,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0051",
+      "id": "REL_14638c578f",
       "from_id": "oeWI2aqzJ3",
       "to_id": "G05gd4ogLz",
       "from_text": "Должник, не исполнивший обязательство вследствие действий третьего лица, имеет право требовать возмещения убытков с данного лица",
@@ -1716,7 +1818,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0052",
+      "id": "REL_46ac06fb11",
       "from_id": "oeWI2aqzJ3",
       "to_id": "tdI4y-DwVF",
       "from_text": "Должник, не исполнивший обязательство вследствие действий третьего лица, имеет право требовать возмещения убытков с данного лица",
@@ -1733,7 +1835,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0053",
+      "id": "REL_17f664b5b7",
       "from_id": "pasVtOpsb4",
       "to_id": "xQgaZcK06x",
       "from_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
@@ -1750,7 +1852,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0054",
+      "id": "REL_8c149dd3f8",
       "from_id": "pasVtOpsb4",
       "to_id": "jnvEze_NKy",
       "from_text": "Должник, исполнивший солидарное обязательство, имеет право обратного требования к каждому из остальных должников в равной доле, за вычетом доли, падающей на него самого",
@@ -1767,7 +1869,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0055",
+      "id": "REL_b5e2c936a1",
       "from_id": "qajkXiwbEP",
       "to_id": "deGYViqnhZ",
       "from_text": "Неуплаченное одним из содолжников должнику, исполнившему солидарную обязанность, падает в равной доле на этого должника и на остальных содолжников",
@@ -1784,7 +1886,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0056",
+      "id": "REL_64fa735bfb",
       "from_id": "qajkXiwbEP",
       "to_id": "NVEJExTzr9",
       "from_text": "Неуплаченное одним из содолжников должнику, исполнившему солидарную обязанность, падает в равной доле на этого должника и на остальных содолжников",
@@ -1801,7 +1903,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0057",
+      "id": "REL_d101d1ea65",
       "from_id": "w9mMYorrwc",
       "to_id": "zGzrX9iC0o",
       "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
@@ -1818,7 +1920,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0058",
+      "id": "REL_b1ecde42cb",
       "from_id": "w9mMYorrwc",
       "to_id": "PQyH7y1l01",
       "from_text": "Правила настоящего пункта применяются соответственно при прекращении солидарного обязательства зачетом встречного требования одного из должников",
@@ -1835,7 +1937,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0059",
+      "id": "REL_3fddefd3e7",
       "from_id": "41trEZ6pAB",
       "to_id": "RaunIz2zHq",
       "from_text": "Солидарный кредитор, получивший исполнение от должника, обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",
@@ -1852,7 +1954,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0060",
+      "id": "REL_77012066b5",
       "from_id": "41trEZ6pAB",
       "to_id": "4HflRtysc8",
       "from_text": "Солидарный кредитор, получивший исполнение от должника, обязан возместить другим кредиторам причитающиеся им доли, если иное не вытекает из отношений между ними",

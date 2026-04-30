@@ -1105,7 +1105,7 @@
   ],
   "relations": [
     {
-      "id": "REL_0001",
+      "id": "REL_17cd3ccfa3",
       "from_id": "adlH3n7HM3",
       "to_id": "UzcGS2V9fC",
       "from_text": "Если результат расчета, предусмотренного пунктом 1 настоящей статьи, имеет:\\n1) положительное значение, такой результат является суммой налога, подлежащего уплате в бюджет в порядке, определенном настоящим Кодексом;\\n2) отрицательное значение, такой результат является превышением суммы налога на добавленную стоимость, относимого в зачет, над суммой начисленного налога.",
@@ -1122,7 +1122,41 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0002",
+      "id": "REL_673dad7957",
+      "from_id": "Z16zvfCpJK",
+      "to_id": "Z16zvfCpJK",
+      "from_text": "Налог на добавленную стоимость, за исключением налога на добавленную стоимость, начисленного по облагаемому импорту, исчисляется за налоговый период в следующем порядке:\\nсумма налога на добавленную стоимость, начисленного с облагаемого оборота,\\nминус\\nсумма налога на добавленную стоимость, разрешенного к отнесению в зачет, определенная в соответствии со статьями 488 и 489 настоящего Кодекса,\\nминус\\nдополнительная сумма налога на добавленную стоимость, относимого в зачет, определенная в соответствии со статьей 490 настоящего Кодекса.",
+      "to_text": "Налог на добавленную стоимость, за исключением налога на добавленную стоимость, начисленного по облагаемому импорту, исчисляется за налоговый период в следующем порядке:\\nсумма налога на добавленную стоимость, начисленного с облагаемого оборота,\\nминус\\nсумма налога на добавленную стоимость, разрешенного к отнесению в зачет, определенная в соответствии со статьями 488 и 489 настоящего Кодекса,\\nминус\\nдополнительная сумма налога на добавленную стоимость, относимого в зачет, определенная в соответствии со статьей 490 настоящего Кодекса.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_d53734bbad",
+      "from_id": "kvow3CKCKC",
+      "to_id": "kvow3CKCKC",
+      "from_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:\\nпроизведение ставки, установленной пунктами 1, 2 и 3 статьи 503 настоящего Кодекса, и облагаемого оборота, за исключением оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенного и (или) увеличенного на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса,\\nплюс\\nпроизведение ставки, установленной пунктом 4 статьи 503 настоящего Кодекса, и оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенных и (или) увеличенных на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса.",
+      "to_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:\\nпроизведение ставки, установленной пунктами 1, 2 и 3 статьи 503 настоящего Кодекса, и облагаемого оборота, за исключением оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенного и (или) увеличенного на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса,\\nплюс\\nпроизведение ставки, установленной пунктом 4 статьи 503 настоящего Кодекса, и оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенных и (или) увеличенных на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса.",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ОБЯЗЫВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_17dd9e2c0d",
       "from_id": "olNxNOdg-h",
       "to_id": "3r0tFSZ5V8",
       "from_text": "за исключением",
@@ -1139,7 +1173,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0003",
+      "id": "REL_b3c54983a5",
       "from_id": "0S_wC67g90",
       "to_id": "-CJBZU8Xjs",
       "from_text": "исчисляется",
@@ -1156,7 +1190,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0004",
+      "id": "REL_1e049d26a3",
       "from_id": "adlH3n7HM3",
       "to_id": "6Hw-wfwQQZ",
       "from_text": "Если результат расчета, предусмотренного пунктом 1 настоящей статьи, имеет:\\n1) положительное значение, такой результат является суммой налога, подлежащего уплате в бюджет в порядке, определенном настоящим Кодексом;\\n2) отрицательное значение, такой результат является превышением суммы налога на добавленную стоимость, относимого в зачет, над суммой начисленного налога.",
@@ -1173,7 +1207,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0005",
+      "id": "REL_987baf8d71",
       "from_id": "Zes3IMJPlF",
       "to_id": "4AwowtVK5L",
       "from_text": "Налог на добавленную стоимость, за исключением налога на добавленную стоимость, начисленного по облагаемому импорту, исчисляется за налоговый период в следующем порядке:",
@@ -1190,7 +1224,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0006",
+      "id": "REL_c7f0155acc",
       "from_id": "3r0tFSZ5V8",
       "to_id": "VmXAr0xeyA",
       "from_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:",
@@ -1207,7 +1241,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0007",
+      "id": "REL_b603094c49",
       "from_id": "5PSLjAAy4H",
       "to_id": "znqerNELiG",
       "from_text": "1) положительное значение, такой результат является суммой налога, подлежащего уплате в бюджет в порядке, определенном настоящим Кодексом;",
@@ -1224,7 +1258,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0008",
+      "id": "REL_b0994be6ef",
       "from_id": "t6JPVeoESs",
       "to_id": "znqerNELiG",
       "from_text": "2) отрицательное значение, такой результат является превышением суммы налога на добавленную стоимость, относимого в зачет, над суммой начисленного налога.",
@@ -1241,7 +1275,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0009",
+      "id": "REL_06cf835648",
       "from_id": "8suUTYdTMO",
       "to_id": "CL8MqQtSBZ",
       "from_text": "нерезидента",
@@ -1258,7 +1292,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0010",
+      "id": "REL_f7a40b1c85",
       "from_id": "Gs03XR4Ptp",
       "to_id": "ZiSD-LPT-V",
       "from_text": "начисленного по",
@@ -1275,7 +1309,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0011",
+      "id": "REL_d7ac592820",
       "from_id": "48odtbuCdi",
       "to_id": "ZiSD-LPT-V",
       "from_text": "облагаемому импорту",
@@ -1292,7 +1326,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0012",
+      "id": "REL_ff3637a5fe",
       "from_id": "0S_wC67g90",
       "to_id": "ZiSD-LPT-V",
       "from_text": "исчисляется",
@@ -1309,7 +1343,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0013",
+      "id": "REL_59c653a43f",
       "from_id": "4gmxnTGPLe",
       "to_id": "Hcwt2-G_sf",
       "from_text": "зачет",
@@ -1326,7 +1360,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0014",
+      "id": "REL_73ab6623fe",
       "from_id": "jzWDKfIavL",
       "to_id": "Hcwt2-G_sf",
       "from_text": "определенная",
@@ -1343,7 +1377,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0015",
+      "id": "REL_ec4e55a54c",
       "from_id": "BWkRFBsCbI",
       "to_id": "i1pzJwegXb",
       "from_text": "зачет",
@@ -1360,7 +1394,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0016",
+      "id": "REL_7898a3f05d",
       "from_id": "YU-dMQO_eN",
       "to_id": "i1pzJwegXb",
       "from_text": "определенная",
@@ -1377,7 +1411,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0017",
+      "id": "REL_3326d64b55",
       "from_id": "e4GASgOK_p",
       "to_id": "WGcIzu5kEi",
       "from_text": "начисленного",
@@ -1394,7 +1428,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0018",
+      "id": "REL_fc791db51f",
       "from_id": "e4GASgOK_p",
       "to_id": "5moCS-nnWu",
       "from_text": "начисленного",
@@ -1411,7 +1445,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0019",
+      "id": "REL_8b4c92bf3b",
       "from_id": "KmQWQ3eSh0",
       "to_id": "5moCS-nnWu",
       "from_text": "определяется",
@@ -1428,7 +1462,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0020",
+      "id": "REL_0525bec99f",
       "from_id": "IGqrr6cSJA",
       "to_id": "QQOt7Y5cCR",
       "from_text": "произведение",
@@ -1445,7 +1479,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0021",
+      "id": "REL_d20f236996",
       "from_id": "IGqrr6cSJA",
       "to_id": "Bj-oahWMGQ",
       "from_text": "произведение",
@@ -1462,7 +1496,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0022",
+      "id": "REL_65d57120a9",
       "from_id": "IGqrr6cSJA",
       "to_id": "WXZvB_7Ad8",
       "from_text": "произведение",
@@ -1479,7 +1513,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0023",
+      "id": "REL_51d7a64910",
       "from_id": "qP7wufRGhK",
       "to_id": "Bj-oahWMGQ",
       "from_text": "установленной",
@@ -1496,7 +1530,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0024",
+      "id": "REL_8bf3aff863",
       "from_id": "qP7wufRGhK",
       "to_id": "WXZvB_7Ad8",
       "from_text": "установленной",
@@ -1513,7 +1547,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0025",
+      "id": "REL_3d200b212f",
       "from_id": "qP7wufRGhK",
       "to_id": "mTrDeRjZFz",
       "from_text": "установленной",
@@ -1530,7 +1564,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0026",
+      "id": "REL_6f5fed7ca8",
       "from_id": "AJvb8-f1ic",
       "to_id": "EJlJnGN4RO",
       "from_text": "реализации",
@@ -1547,7 +1581,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0027",
+      "id": "REL_a522bcc73c",
       "from_id": "AJvb8-f1ic",
       "to_id": "J8yw8lw4GE",
       "from_text": "реализации",
@@ -1564,7 +1598,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0028",
+      "id": "REL_d3f59d1205",
       "from_id": "AJvb8-f1ic",
       "to_id": "sOKpVUOyXK",
       "from_text": "реализации",
@@ -1581,7 +1615,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0029",
+      "id": "REL_605fe37cf5",
       "from_id": "ftPgb71eZa",
       "to_id": "EJlJnGN4RO",
       "from_text": "указанных в",
@@ -1598,7 +1632,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0030",
+      "id": "REL_0febcc2a8f",
       "from_id": "ftPgb71eZa",
       "to_id": "J8yw8lw4GE",
       "from_text": "указанных в",
@@ -1615,7 +1649,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0031",
+      "id": "REL_13b1bd66b5",
       "from_id": "ftPgb71eZa",
       "to_id": "sOKpVUOyXK",
       "from_text": "указанных в",
@@ -1632,7 +1666,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0032",
+      "id": "REL_3489f62c15",
       "from_id": "nQleyFu8N4",
       "to_id": "J8yw8lw4GE",
       "from_text": "уменьшенного",
@@ -1649,7 +1683,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0033",
+      "id": "REL_f640ad44ba",
       "from_id": "nQleyFu8N4",
       "to_id": "sOKpVUOyXK",
       "from_text": "уменьшенного",
@@ -1666,7 +1700,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0034",
+      "id": "REL_48d1454594",
       "from_id": "nQleyFu8N4",
       "to_id": "pP01nCqvhT",
       "from_text": "уменьшенного",
@@ -1683,7 +1717,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0035",
+      "id": "REL_b0a8e47147",
       "from_id": "3QAGhH6Pkv",
       "to_id": "J8yw8lw4GE",
       "from_text": "увеличенного на",
@@ -1700,7 +1734,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0036",
+      "id": "REL_bef4959b3f",
       "from_id": "3QAGhH6Pkv",
       "to_id": "sOKpVUOyXK",
       "from_text": "увеличенного на",
@@ -1717,7 +1751,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0037",
+      "id": "REL_d5ae58125c",
       "from_id": "3QAGhH6Pkv",
       "to_id": "pP01nCqvhT",
       "from_text": "увеличенного на",
@@ -1734,7 +1768,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0038",
+      "id": "REL_9ef911794a",
       "from_id": "LzNpMHwaSW",
       "to_id": "pP01nCqvhT",
       "from_text": "предусмотренных",
@@ -1751,7 +1785,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0039",
+      "id": "REL_3123bc4ffd",
       "from_id": "eQv6H9lvas",
       "to_id": "qjN1RTASWP",
       "from_text": "произведение",
@@ -1768,7 +1802,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0040",
+      "id": "REL_e0eb7dd9aa",
       "from_id": "eQv6H9lvas",
       "to_id": "WBi22AhvKI",
       "from_text": "произведение",
@@ -1785,7 +1819,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0041",
+      "id": "REL_3b47cf2391",
       "from_id": "eQv6H9lvas",
       "to_id": "YxT-Lb4gdT",
       "from_text": "произведение",
@@ -1802,7 +1836,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0042",
+      "id": "REL_3b7e592504",
       "from_id": "NIisLRRg1j",
       "to_id": "WBi22AhvKI",
       "from_text": "установленной",
@@ -1819,7 +1853,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0043",
+      "id": "REL_0e94929959",
       "from_id": "NIisLRRg1j",
       "to_id": "YxT-Lb4gdT",
       "from_text": "установленной",
@@ -1836,7 +1870,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0044",
+      "id": "REL_6cbe0f6822",
       "from_id": "-5KWM8Zqpq",
       "to_id": "kU2f3yLytI",
       "from_text": "реализации",
@@ -1853,7 +1887,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0045",
+      "id": "REL_80998d7e1a",
       "from_id": "-5KWM8Zqpq",
       "to_id": "XaAa-lHN_b",
       "from_text": "реализации",
@@ -1870,7 +1904,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0046",
+      "id": "REL_cd7efc9933",
       "from_id": "-5KWM8Zqpq",
       "to_id": "UWPJ0bW2rW",
       "from_text": "реализации",
@@ -1887,7 +1921,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0047",
+      "id": "REL_711ed5f98b",
       "from_id": "G6jkAda6OJ",
       "to_id": "kU2f3yLytI",
       "from_text": "указанных в",
@@ -1904,7 +1938,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0048",
+      "id": "REL_35cdacd323",
       "from_id": "G6jkAda6OJ",
       "to_id": "XaAa-lHN_b",
       "from_text": "указанных в",
@@ -1921,7 +1955,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0049",
+      "id": "REL_706e866eab",
       "from_id": "G6jkAda6OJ",
       "to_id": "UWPJ0bW2rW",
       "from_text": "указанных в",
@@ -1938,7 +1972,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0050",
+      "id": "REL_821209bf51",
       "from_id": "rf-mld1WS0",
       "to_id": "XaAa-lHN_b",
       "from_text": "уменьшенных",
@@ -1955,7 +1989,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0051",
+      "id": "REL_4cea762ddf",
       "from_id": "rf-mld1WS0",
       "to_id": "UWPJ0bW2rW",
       "from_text": "уменьшенных",
@@ -1972,7 +2006,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0052",
+      "id": "REL_feca84592b",
       "from_id": "rf-mld1WS0",
       "to_id": "RqKDz60qPR",
       "from_text": "уменьшенных",
@@ -1989,7 +2023,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0053",
+      "id": "REL_574e822cd1",
       "from_id": "dFRza8STKn",
       "to_id": "XaAa-lHN_b",
       "from_text": "увеличенных на",
@@ -2006,7 +2040,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0054",
+      "id": "REL_cf60cf213e",
       "from_id": "dFRza8STKn",
       "to_id": "UWPJ0bW2rW",
       "from_text": "увеличенных на",
@@ -2023,7 +2057,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0055",
+      "id": "REL_99b3a8824f",
       "from_id": "dFRza8STKn",
       "to_id": "RqKDz60qPR",
       "from_text": "увеличенных на",
@@ -2040,7 +2074,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0056",
+      "id": "REL_5bc658d07c",
       "from_id": "Qslr9HHN6x",
       "to_id": "RqKDz60qPR",
       "from_text": "предусмотренных",
@@ -2057,7 +2091,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0057",
+      "id": "REL_24776a0b92",
       "from_id": "zVdA2M7P32",
       "to_id": "tIQ2dH9iay",
       "from_text": "расчета,",
@@ -2074,7 +2108,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0058",
+      "id": "REL_4dcc57ae64",
       "from_id": "8jkEWt8sJk",
       "to_id": "tIQ2dH9iay",
       "from_text": "предусмотренного",
@@ -2091,7 +2125,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0059",
+      "id": "REL_65cf5aa6d7",
       "from_id": "OZTiFeqSeA",
       "to_id": "XX62-d1YBg",
       "from_text": "определенном",
@@ -2108,7 +2142,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0060",
+      "id": "REL_a71d678b7a",
       "from_id": "OZTiFeqSeA",
       "to_id": "guTlwmqCYu",
       "from_text": "определенном",
@@ -2125,7 +2159,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0061",
+      "id": "REL_82bc3299df",
       "from_id": "Ddizr_z7T4",
       "to_id": "ShOclDl7Q5",
       "from_text": "превышением",
@@ -2142,7 +2176,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0062",
+      "id": "REL_6f1fb0f7c5",
       "from_id": "Ddizr_z7T4",
       "to_id": "_ZZ8c5R1LD",
       "from_text": "превышением",
@@ -2159,7 +2193,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0063",
+      "id": "REL_de64aa8707",
       "from_id": "Ddizr_z7T4",
       "to_id": "Q7T4wV9sdj",
       "from_text": "превышением",
@@ -2176,7 +2210,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0064",
+      "id": "REL_ce647b8580",
       "from_id": "Ddizr_z7T4",
       "to_id": "8kE6daq1dy",
       "from_text": "превышением",
@@ -2193,7 +2227,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0065",
+      "id": "REL_01e5a3a58f",
       "from_id": "aKBL-ErKWu",
       "to_id": "Q7T4wV9sdj",
       "from_text": "зачет",
@@ -2210,7 +2244,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0066",
+      "id": "REL_4b703b940b",
       "from_id": "aKBL-ErKWu",
       "to_id": "8kE6daq1dy",
       "from_text": "зачет",
@@ -2227,7 +2261,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0067",
+      "id": "REL_cc40840aff",
       "from_id": "miXu6NYb0d",
       "to_id": "8kE6daq1dy",
       "from_text": "начисленного",
@@ -2244,7 +2278,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0068",
+      "id": "REL_320925dc73",
       "from_id": "CL8MqQtSBZ",
       "to_id": "JihFmdcgI0",
       "from_text": "исчисляется",
@@ -2261,7 +2295,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0069",
+      "id": "REL_b6133a4afd",
       "from_id": "CL8MqQtSBZ",
       "to_id": "89O7G62BwU",
       "from_text": "исчисляется",
@@ -2278,7 +2312,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0070",
+      "id": "REL_a4dc3a5e96",
       "from_id": "CL8MqQtSBZ",
       "to_id": "oJ4yEQKTcU",
       "from_text": "исчисляется",
@@ -2295,7 +2329,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0071",
+      "id": "REL_5db470564e",
       "from_id": "CL8MqQtSBZ",
       "to_id": "kKKkMJUYi2",
       "from_text": "исчисляется",
@@ -2312,7 +2346,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0072",
+      "id": "REL_0cb0056fee",
       "from_id": "CL8MqQtSBZ",
       "to_id": "V1ZgbPEMJM",
       "from_text": "исчисляется",
@@ -2329,7 +2363,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0073",
+      "id": "REL_f45cf3b9fb",
       "from_id": "-I73QH85Kv",
       "to_id": "89O7G62BwU",
       "from_text": "применения",
@@ -2346,7 +2380,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0074",
+      "id": "REL_46270174da",
       "from_id": "-I73QH85Kv",
       "to_id": "oJ4yEQKTcU",
       "from_text": "применения",
@@ -2363,7 +2397,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0075",
+      "id": "REL_938385db88",
       "from_id": "-I73QH85Kv",
       "to_id": "kKKkMJUYi2",
       "from_text": "применения",
@@ -2380,7 +2414,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0076",
+      "id": "REL_e5ae036b50",
       "from_id": "-I73QH85Kv",
       "to_id": "V1ZgbPEMJM",
       "from_text": "применения",
@@ -2397,7 +2431,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0077",
+      "id": "REL_6bce24ec87",
       "from_id": "pDT2ACftxv",
       "to_id": "oJ4yEQKTcU",
       "from_text": "предусмотренной",
@@ -2414,7 +2448,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0078",
+      "id": "REL_acf8353e2f",
       "from_id": "pDT2ACftxv",
       "to_id": "kKKkMJUYi2",
       "from_text": "предусмотренной",
@@ -2431,7 +2465,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0079",
+      "id": "REL_babc9da1ee",
       "from_id": "pDT2ACftxv",
       "to_id": "V1ZgbPEMJM",
       "from_text": "предусмотренной",
@@ -2448,7 +2482,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0080",
+      "id": "REL_9fcbc3a4af",
       "from_id": "pDT2ACftxv",
       "to_id": "RoQuPvHblk",
       "from_text": "предусмотренной",
@@ -2465,7 +2499,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0081",
+      "id": "REL_8bab9fa05d",
       "from_id": "pDT2ACftxv",
       "to_id": "Wfwft3hAL4",
       "from_text": "предусмотренной",
@@ -2482,7 +2516,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0082",
+      "id": "REL_ff55df7b65",
       "from_id": "e1h3n1h0hK",
       "to_id": "RoQuPvHblk",
       "from_text": "приобретению",
@@ -2499,7 +2533,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0083",
+      "id": "REL_7c7dba430a",
       "from_id": "e1h3n1h0hK",
       "to_id": "Wfwft3hAL4",
       "from_text": "приобретению",
@@ -2516,7 +2550,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0084",
+      "id": "REL_c12ca02a63",
       "from_id": "UzcGS2V9fC",
       "to_id": "PsLB5K2Aqg",
       "from_text": "подлежащего уплате",
@@ -2533,7 +2567,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0085",
+      "id": "REL_f477bea00f",
       "from_id": "UzcGS2V9fC",
       "to_id": "LQ53GUL92a",
       "from_text": "подлежащего уплате",
@@ -2550,7 +2584,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0086",
+      "id": "REL_e65005330a",
       "from_id": "UzcGS2V9fC",
       "to_id": "XX62-d1YBg",
       "from_text": "подлежащего уплате",
@@ -2567,7 +2601,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0087",
+      "id": "REL_56119265a8",
       "from_id": "UzcGS2V9fC",
       "to_id": "guTlwmqCYu",
       "from_text": "подлежащего уплате",
@@ -2584,7 +2618,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0088",
+      "id": "REL_714b429d2d",
       "from_id": "Z16zvfCpJK",
       "to_id": "Zes3IMJPlF",
       "from_text": "Налог на добавленную стоимость, за исключением налога на добавленную стоимость, начисленного по облагаемому импорту, исчисляется за налоговый период в следующем порядке:\\nсумма налога на добавленную стоимость, начисленного с облагаемого оборота,\\nминус\\nсумма налога на добавленную стоимость, разрешенного к отнесению в зачет, определенная в соответствии со статьями 488 и 489 настоящего Кодекса,\\nминус\\nдополнительная сумма налога на добавленную стоимость, относимого в зачет, определенная в соответствии со статьей 490 настоящего Кодекса.",
@@ -2601,7 +2635,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0089",
+      "id": "REL_44b6b985db",
       "from_id": "Z16zvfCpJK",
       "to_id": "4AwowtVK5L",
       "from_text": "Налог на добавленную стоимость, за исключением налога на добавленную стоимость, начисленного по облагаемому импорту, исчисляется за налоговый период в следующем порядке:\\nсумма налога на добавленную стоимость, начисленного с облагаемого оборота,\\nминус\\nсумма налога на добавленную стоимость, разрешенного к отнесению в зачет, определенная в соответствии со статьями 488 и 489 настоящего Кодекса,\\nминус\\nдополнительная сумма налога на добавленную стоимость, относимого в зачет, определенная в соответствии со статьей 490 настоящего Кодекса.",
@@ -2618,7 +2652,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0090",
+      "id": "REL_6a623fc9cf",
       "from_id": "kvow3CKCKC",
       "to_id": "3r0tFSZ5V8",
       "from_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:\\nпроизведение ставки, установленной пунктами 1, 2 и 3 статьи 503 настоящего Кодекса, и облагаемого оборота, за исключением оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенного и (или) увеличенного на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса,\\nплюс\\nпроизведение ставки, установленной пунктом 4 статьи 503 настоящего Кодекса, и оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенных и (или) увеличенных на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса.",
@@ -2635,7 +2669,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0091",
+      "id": "REL_0b51fae1a5",
       "from_id": "kvow3CKCKC",
       "to_id": "VmXAr0xeyA",
       "from_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:\\nпроизведение ставки, установленной пунктами 1, 2 и 3 статьи 503 настоящего Кодекса, и облагаемого оборота, за исключением оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенного и (или) увеличенного на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса,\\nплюс\\nпроизведение ставки, установленной пунктом 4 статьи 503 настоящего Кодекса, и оборотов по реализации, указанных в главе 47 настоящего Кодекса, уменьшенных и (или) увеличенных на сумму оборотов, предусмотренных статьями 464 и 465 настоящего Кодекса.",
@@ -2652,7 +2686,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0092",
+      "id": "REL_acbd3a47de",
       "from_id": "adlH3n7HM3",
       "to_id": "znqerNELiG",
       "from_text": "Если результат расчета, предусмотренного пунктом 1 настоящей статьи, имеет:\\n1) положительное значение, такой результат является суммой налога, подлежащего уплате в бюджет в порядке, определенном настоящим Кодексом;\\n2) отрицательное значение, такой результат является превышением суммы налога на добавленную стоимость, относимого в зачет, над суммой начисленного налога.",
@@ -2669,7 +2703,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0093",
+      "id": "REL_c562dd01c2",
       "from_id": "adlH3n7HM3",
       "to_id": "5PSLjAAy4H",
       "from_text": "Если результат расчета, предусмотренного пунктом 1 настоящей статьи, имеет:\\n1) положительное значение, такой результат является суммой налога, подлежащего уплате в бюджет в порядке, определенном настоящим Кодексом;\\n2) отрицательное значение, такой результат является превышением суммы налога на добавленную стоимость, относимого в зачет, над суммой начисленного налога.",
@@ -2686,7 +2720,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0094",
+      "id": "REL_645f03fd29",
       "from_id": "adlH3n7HM3",
       "to_id": "t6JPVeoESs",
       "from_text": "Если результат расчета, предусмотренного пунктом 1 настоящей статьи, имеет:\\n1) положительное значение, такой результат является суммой налога, подлежащего уплате в бюджет в порядке, определенном настоящим Кодексом;\\n2) отрицательное значение, такой результат является превышением суммы налога на добавленную стоимость, относимого в зачет, над суммой начисленного налога.",
@@ -2703,7 +2737,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0095",
+      "id": "REL_1ef74368d1",
       "from_id": "Zes3IMJPlF",
       "to_id": "i1pzJwegXb",
       "from_text": "Налог на добавленную стоимость, за исключением налога на добавленную стоимость, начисленного по облагаемому импорту, исчисляется за налоговый период в следующем порядке:",
@@ -2720,7 +2754,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0096",
+      "id": "REL_724a0d1eaf",
       "from_id": "3r0tFSZ5V8",
       "to_id": "Bj-oahWMGQ",
       "from_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:",
@@ -2737,7 +2771,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0097",
+      "id": "REL_99044f6256",
       "from_id": "3r0tFSZ5V8",
       "to_id": "WBi22AhvKI",
       "from_text": "Сумма налога на добавленную стоимость, начисленного с облагаемого оборота, определяется в следующем порядке:",

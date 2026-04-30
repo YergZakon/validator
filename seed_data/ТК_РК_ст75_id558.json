@@ -569,7 +569,7 @@
   ],
   "relations": [
     {
-      "id": "REL_0001",
+      "id": "REL_77c75f4dca",
       "from_id": "tAE4ES4xCc",
       "to_id": "ZBzAWjvE3w",
       "from_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -586,7 +586,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0002",
+      "id": "REL_096c562c28",
       "from_id": "HBZchJhlD_",
       "to_id": "ZBzAWjvE3w",
       "from_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -603,7 +603,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0003",
+      "id": "REL_9a33baf124",
       "from_id": "xy0aSFEpQT",
       "to_id": "9ZM4VkD9HI",
       "from_text": "Графики сменности доводятся работодателем до сведения работников не позднее чем за десять календарных дней до введения их в действие.\\nСрок ознакомления с графиком сменности может сокращаться в случае приема работника на работу или перевода работника на другую работу при сменной работе",
@@ -620,7 +620,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0004",
+      "id": "REL_d941622156",
       "from_id": "xy0aSFEpQT",
       "to_id": "NFDUgiCMul",
       "from_text": "Графики сменности доводятся работодателем до сведения работников не позднее чем за десять календарных дней до введения их в действие.\\nСрок ознакомления с графиком сменности может сокращаться в случае приема работника на работу или перевода работника на другую работу при сменной работе",
@@ -637,7 +637,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0005",
+      "id": "REL_0c8197e068",
       "from_id": "xy0aSFEpQT",
       "to_id": "omypMlNOxW",
       "from_text": "Графики сменности доводятся работодателем до сведения работников не позднее чем за десять календарных дней до введения их в действие.\\nСрок ознакомления с графиком сменности может сокращаться в случае приема работника на работу или перевода работника на другую работу при сменной работе",
@@ -654,7 +654,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0006",
+      "id": "REL_764fcdbada",
       "from_id": "-CMcAPRLZx",
       "to_id": "_Bxjxnamdo",
       "from_text": "Привлечение работника к работе в течение двух рабочих смен подряд запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
@@ -671,7 +671,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0007",
+      "id": "REL_c38dec8c83",
       "from_id": "iA1SDqzNeM",
       "to_id": "_Bxjxnamdo",
       "from_text": "Привлечение работника к работе в течение двух рабочих смен подряд запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
@@ -688,7 +688,58 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0008",
+      "id": "REL_607ceeb658",
+      "from_id": "LtVy-00i_D",
+      "to_id": "tAE4ES4xCc",
+      "from_text": "может устанавливаться",
+      "to_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ФАКУЛЬТАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_УПРАВОМОЧИВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.85,
+      "trigger_phrase": "(modality contains/contained in norm_types span; consistent action_modality)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_2fda759a87",
+      "from_id": "HBZchJhlD_",
+      "to_id": "tAE4ES4xCc",
+      "from_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
+      "to_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ДИСПОЗИТИВНАЯ",
+      "to_label": "norm_types:НОРМА_УПРАВОМОЧИВАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_0040a6ff33",
+      "from_id": "iA1SDqzNeM",
+      "to_id": "-CMcAPRLZx",
+      "from_text": "Привлечение работника к работе в течение двух рабочих смен подряд запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
+      "to_text": "Привлечение работника к работе в течение двух рабочих смен подряд запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
+      "from_label": "modality:МОДАЛЬНОСТЬ_ИМПЕРАТИВНАЯ",
+      "to_label": "norm_types:НОРМА_ЗАПРЕЩАЮЩАЯ",
+      "relation": "СООТВЕТСТВУЕТ_ТИПУ",
+      "source": "auto",
+      "confidence": 0.97,
+      "trigger_phrase": "(multi-label on identical span)",
+      "algorithm": "ALGO_СООТВЕТСТВУЕТ_ТИПУ_v1",
+      "expert_verdict": null,
+      "expert_correction": null,
+      "expert_comment": null
+    },
+    {
+      "id": "REL_75b6cf3b69",
       "from_id": "jQ3K-N3trw",
       "to_id": "_Bxjxnamdo",
       "from_text": "за исключением случаев",
@@ -705,7 +756,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0009",
+      "id": "REL_a2c7ea5141",
       "from_id": "-ZEpDOJuq1",
       "to_id": "_Bxjxnamdo",
       "from_text": "за исключением случаев",
@@ -722,7 +773,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0010",
+      "id": "REL_e6f3c5245d",
       "from_id": "k9Y6h9sMbQ",
       "to_id": "BhVOTAheqC",
       "from_text": "может устанавливаться",
@@ -739,7 +790,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0011",
+      "id": "REL_2842488f7e",
       "from_id": "k9Y6h9sMbQ",
       "to_id": "S7tT3K_zzF",
       "from_text": "может устанавливаться",
@@ -756,7 +807,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0012",
+      "id": "REL_10a2003315",
       "from_id": "bL4su1zHIx",
       "to_id": "zCHL4L-zos",
       "from_text": "до сведения",
@@ -773,7 +824,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0013",
+      "id": "REL_cba08d5d84",
       "from_id": "bL4su1zHIx",
       "to_id": "1YEaLRZGlk",
       "from_text": "до сведения",
@@ -790,7 +841,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0014",
+      "id": "REL_e6dec6ff92",
       "from_id": "rQAf_1XlbH",
       "to_id": "yybooPxZJ8",
       "from_text": "не позднее чем за десять календарных дней до введения их в действие.\\n",
@@ -807,7 +858,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0015",
+      "id": "REL_9590b2395e",
       "from_id": "rQAf_1XlbH",
       "to_id": "5RD1Z8mBAu",
       "from_text": "не позднее чем за десять календарных дней до введения их в действие.\\n",
@@ -824,7 +875,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0016",
+      "id": "REL_1c28fed73b",
       "from_id": "4xGBxaE7FQ",
       "to_id": "_T6G-awBsB",
       "from_text": "Привлечение работника к работе",
@@ -841,7 +892,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0017",
+      "id": "REL_807fcbd565",
       "from_id": "7g2XMID7qV",
       "to_id": "dfR7-4mPPo",
       "from_text": "когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -858,7 +909,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0018",
+      "id": "REL_68a6f3192d",
       "from_id": "7g2XMID7qV",
       "to_id": "jvgV7b0kls",
       "from_text": "когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -875,7 +926,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0019",
+      "id": "REL_b7a9d061bb",
       "from_id": "ZBzAWjvE3w",
       "to_id": "jvgV7b0kls",
       "from_text": "может устанавливаться",
@@ -892,7 +943,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0020",
+      "id": "REL_2f3856f4bb",
       "from_id": "tAE4ES4xCc",
       "to_id": "jvgV7b0kls",
       "from_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -909,7 +960,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0021",
+      "id": "REL_4bc085f4c8",
       "from_id": "FuHZYnKFH-",
       "to_id": "Zjdswc9jnu",
       "from_text": "переход из одной рабочей смены в другую устанавливаются графиками сменности",
@@ -926,7 +977,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0022",
+      "id": "REL_c1028149e5",
       "from_id": "FuHZYnKFH-",
       "to_id": "8UVrv-4-0L",
       "from_text": "переход из одной рабочей смены в другую устанавливаются графиками сменности",
@@ -943,7 +994,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0023",
+      "id": "REL_94d7d858e1",
       "from_id": "wWJTmCDyBU",
       "to_id": "8UVrv-4-0L",
       "from_text": "При сменной работе продолжительность рабочей смены, переход из одной рабочей смены в другую устанавливаются графиками сменности",
@@ -960,7 +1011,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0024",
+      "id": "REL_1358c26ec7",
       "from_id": "rjtdchfVAW",
       "to_id": "QPQn-zecLd",
       "from_text": "приема работника на работу или перевода работника на другую работу при сменной работе.\\n",
@@ -977,7 +1028,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0025",
+      "id": "REL_f965592a8b",
       "from_id": "omypMlNOxW",
       "to_id": "QPQn-zecLd",
       "from_text": "может сокращаться",
@@ -994,7 +1045,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0026",
+      "id": "REL_1b9b3eb05f",
       "from_id": "wLoDZm5hV9",
       "to_id": "nu8ssmOeMJ",
       "from_text": "запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
@@ -1011,7 +1062,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0027",
+      "id": "REL_09a03ffdb9",
       "from_id": "uipuvN6O-k",
       "to_id": "bL4su1zHIx",
       "from_text": "работодателем",
@@ -1028,7 +1079,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0028",
+      "id": "REL_403e033c78",
       "from_id": "L5bhETu-Ak",
       "to_id": "HaQ_Y7PgOv",
       "from_text": "работников",
@@ -1045,7 +1096,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0029",
+      "id": "REL_74ca22cabb",
       "from_id": "6YgJBb22wH",
       "to_id": "_Bxjxnamdo",
       "from_text": "работника",
@@ -1062,7 +1113,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0030",
+      "id": "REL_35b7023532",
       "from_id": "k9Y6h9sMbQ",
       "to_id": "66EeNBmJkX",
       "from_text": "может устанавливаться",
@@ -1079,7 +1130,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0031",
+      "id": "REL_7d9e79912e",
       "from_id": "k9Y6h9sMbQ",
       "to_id": "IRBeb91jah",
       "from_text": "может устанавливаться",
@@ -1096,7 +1147,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0032",
+      "id": "REL_e33b477482",
       "from_id": "ZBzAWjvE3w",
       "to_id": "66EeNBmJkX",
       "from_text": "может устанавливаться",
@@ -1113,7 +1164,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0033",
+      "id": "REL_80bf6f628b",
       "from_id": "ZBzAWjvE3w",
       "to_id": "IRBeb91jah",
       "from_text": "может устанавливаться",
@@ -1130,7 +1181,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0034",
+      "id": "REL_cd65652a91",
       "from_id": "lL0EJLPQN_",
       "to_id": "2oQxKZTXFP",
       "from_text": "устанавливаются",
@@ -1147,7 +1198,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0035",
+      "id": "REL_89ab94460b",
       "from_id": "pj3IHLB7dB",
       "to_id": "ykIxzBgpxi",
       "from_text": "ознакомления",
@@ -1164,7 +1215,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0036",
+      "id": "REL_5ed95cb1b9",
       "from_id": "omypMlNOxW",
       "to_id": "l5uMbwxhr3",
       "from_text": "может сокращаться",
@@ -1181,7 +1232,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0037",
+      "id": "REL_8261b00ee8",
       "from_id": "tAE4ES4xCc",
       "to_id": "dfR7-4mPPo",
       "from_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -1198,7 +1249,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0038",
+      "id": "REL_60ac54a09c",
       "from_id": "tAE4ES4xCc",
       "to_id": "7g2XMID7qV",
       "from_text": "Сменная работа может устанавливаться в случаях, когда длительность производственного процесса превышает допустимую продолжительность ежедневной работы",
@@ -1215,7 +1266,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0039",
+      "id": "REL_74faaef3ca",
       "from_id": "wWJTmCDyBU",
       "to_id": "Zjdswc9jnu",
       "from_text": "При сменной работе продолжительность рабочей смены, переход из одной рабочей смены в другую устанавливаются графиками сменности",
@@ -1232,7 +1283,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0040",
+      "id": "REL_a53ddb8ee2",
       "from_id": "wWJTmCDyBU",
       "to_id": "FuHZYnKFH-",
       "from_text": "При сменной работе продолжительность рабочей смены, переход из одной рабочей смены в другую устанавливаются графиками сменности",
@@ -1249,7 +1300,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0041",
+      "id": "REL_b431aa86a8",
       "from_id": "-CMcAPRLZx",
       "to_id": "nu8ssmOeMJ",
       "from_text": "Привлечение работника к работе в течение двух рабочих смен подряд запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
@@ -1266,7 +1317,7 @@
       "expert_comment": null
     },
     {
-      "id": "REL_0042",
+      "id": "REL_cc6cc16ec3",
       "from_id": "-CMcAPRLZx",
       "to_id": "wLoDZm5hV9",
       "from_text": "Привлечение работника к работе в течение двух рабочих смен подряд запрещается, за исключением случаев, предусмотренных статьей 86 настоящего Кодекса",
