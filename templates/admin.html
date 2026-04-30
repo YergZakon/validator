@@ -142,4 +142,17 @@
         <li><a href="/admin/download/per_expert_stats.csv">per_expert_stats.csv</a> — статистика по экспертам</li>
     </ul>
 </section>
+
+<section>
+    <h2>Миграция схемы (re-seed)</h2>
+    <p class="muted tiny">
+        Применяет UPSERT из <code>seed_data/*.json</code>: добавляет новые связи (например, после
+        обновления экстрактора), обновляет существующие, удаляет устаревшие. Голоса экспертов на
+        стабильных <code>rel_id</code> сохраняются. Используйте после релиза новой версии экстрактора.
+    </p>
+    <form method="post" action="/admin/reseed" style="display:inline"
+          onsubmit="return confirm('Запустить re-seed? Голоса на стабильных rel_id сохранятся.')">
+        <button type="submit" class="btn">Запустить re-seed</button>
+    </form>
+</section>
 {% endblock %}

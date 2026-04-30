@@ -481,6 +481,21 @@ def admin_export(request: Request):
     return RedirectResponse(url="/admin?exported=1", status_code=303)
 
 
+@app.post("/admin/reseed")
+def admin_reseed(request: Request):
+    """Перетягивает articles/entities/relations из seed_data/*.json
+    через UPSERT — голоса экспертов сохраняются благодаря стабильным rel_id.
+    Используется для миграции при обновлении схемы связей."""
+    admin = current_expert(request)
+    if not admin or not admin["is_admin"]:
+        return RedirectResponse(url="/login", status_code=303)
+    try:
+        seed_articles()
+        return RedirectResponse(url="/admin?reseeded=1", status_code=303)
+    except Exception as e:
+        raise HTTPException(500, f"seed failed: {e}")
+
+
 @app.get("/admin/download/{filename}")
 def admin_download(request: Request, filename: str):
     admin = current_expert(request)
