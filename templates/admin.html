@@ -155,4 +155,28 @@
         <button type="submit" class="btn">Запустить re-seed</button>
     </form>
 </section>
+
+<section>
+    <h2>Импорт вердиктов методолога</h2>
+    <p class="muted tiny">
+        Применяет ручные вердикты методолога из <code>seed_data/methodologist_verdicts.json</code>
+        как голоса виртуального эксперта <code>methodologist_v1</code>. Покрывает 4 валидированные
+        статьи: ГК ст.32, НК ст.18, ТК ст.77, УК ст.55. Идемпотентно — повторный запуск перезаписывает.
+        Учитывает v18-переименования (СОВЕРШАЕТ→ПРИМЕНЯЕТСЯ_К, ИМЕЕТ_МЕРУ→ИМЕЕТ_ПАРАМЕТР).
+    </p>
+    <button type="button" class="btn"
+            onclick="if(!confirm('Запустить импорт вердиктов методолога?'))return;
+                     fetch('/admin/import-methodologist', {method:'POST'})
+                       .then(r=>r.json())
+                       .then(d=>{
+                         if(d.ok){
+                           const s=d.summary;
+                           alert('✓ Импортировано: '+s.applied+'/'+s.total+' вердиктов\nНе сопоставлено: '+s.unmatched);
+                           location.reload();
+                         } else alert('Ошибка: '+(d.detail||JSON.stringify(d)));
+                       })
+                       .catch(e=>alert('Ошибка: '+e));">
+        Импортировать вердикты методолога
+    </button>
+</section>
 {% endblock %}

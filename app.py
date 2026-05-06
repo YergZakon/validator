@@ -496,6 +496,28 @@ def admin_reseed(request: Request):
         raise HTTPException(500, f"seed failed: {e}")
 
 
+@app.post("/admin/import-methodologist")
+def admin_import_methodologist(request: Request):
+    """Импортирует ручные вердикты методолога из
+    seed_data/methodologist_verdicts.json как голоса виртуального эксперта
+    `methodologist_v1`. Идемпотентно: повторный запуск перезаписывает голоса
+    через ON CONFLICT DO UPDATE."""
+    admin = current_expert(request)
+    if not admin or not admin["is_admin"]:
+        return RedirectResponse(url="/login", status_code=303)
+    try:
+        from import_methodologist_verdicts import cmd_import
+        summary = cmd_import(dry_run=False)
+        return JSONResponse({
+            "ok": True,
+            "summary": summary,
+        })
+    except SystemExit as e:
+        raise HTTPException(400, f"import failed: {e}")
+    except Exception as e:
+        raise HTTPException(500, f"import failed: {e}")
+
+
 @app.get("/admin/download/{filename}")
 def admin_download(request: Request, filename: str):
     admin = current_expert(request)

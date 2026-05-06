@@ -25,7 +25,10 @@ def seed_articles():
     сохраняются между перезаливками, потому что rel_id стабильны (sha1-based)."""
     conn = get_conn()
     cur = conn.cursor()
-    files = sorted(MVP_DIR.glob("*.json"))
+    # Только article-JSON: имена вида КОДЕКС_РК_стNN_idNNN.json.
+    # Прочие JSON в seed_data/ (например, methodologist_verdicts.json) пропускаем.
+    files = sorted(p for p in MVP_DIR.glob("*.json")
+                   if "_РК_ст" in p.name)
     if not files:
         print(f"ERROR: не найдено JSON-файлов в {MVP_DIR}. "
               f"Сначала запустите extract_relations_v2.py")
